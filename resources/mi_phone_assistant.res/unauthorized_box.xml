@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" mininfo="640,420" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_small.png'" childalign="center" align="center">
+	  <HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+			<Control height="13" width="20"  padding="10,0,0,0"/>
+			<Label text="Mi Assistant" align="left" padding="5,0,5,0"/>
+				
+			<Button name="closebtn" align="right" width="11" height="11" 
+			normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+			<HorizontalLayout width="12" /> 
+		</HorizontalLayout>
+	  <VerticalLayout height="28" />
+	  <Control bkimage="imgs\unauthorized.png" height="185" width="278" />
+	  <VerticalLayout height="18" />
+	  <Label text="Check Always allow from this computer, then tap OK" align="center"  font="18" textcolor="#444c58"/>
+	  <VerticalLayout bkimage="file='imgs/bg_small.png' source='0,100,640,138'" height="38" />
+	  <Button name="unauthorized_help_btn" text="No popup? Try again" font="13" height="30" width="125" textcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'"/>
+  </VerticalLayout>
+</Window>

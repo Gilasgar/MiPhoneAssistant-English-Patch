@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" childalign="center" align="center">
+	<VerticalLayout height="85" />
+	<Control bkimage="imgs/icon_link_dev.png" width="74" height="74"/>
+	<VerticalLayout height="25" />
+	<Label name="dev_name_tip" text="Connecting to your device" textcolor="#444c58" font="20" align="center" />
+	<Label text="Do not disconnect USB" textcolor="#444c58" font="20" align="center" />
+	
+	<Label name="link_status" text="Reading device driver..." textcolor="#8b94a5" align="left" padding="40,60,5,0"/>
+	<VerticalLayout name="link_bg" childalign="left" height="4" width="590" padding="25,0,5,0" bkimage="file='imgs/process.png' source='5,0,40,2'">
+		<Control name="link_pro"  height="4" width="1" bkimage="file='imgs/process.png' source='70,0,120,2'"/>
+	</VerticalLayout>
+  </VerticalLayout>
+</Window>

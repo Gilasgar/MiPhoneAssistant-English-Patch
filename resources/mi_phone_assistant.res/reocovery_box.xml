@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="720,500" mininfo="720,500" roundcorner="1,1" sizebox="4,4,4,4" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_sec.png'" childalign="center" align="center">
+    <HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+		<Control bkimage="file='imgs/mi_sec.png'" height="13" width="20"  padding="10,0,0,0"/>
+		<Label text="Mi Assistant" align="left" padding="5,0,5,0"/>
+			
+		<Button name="closebtn" align="right" width="11" height="11" padding="0,0,10,0" enabled="false"
+		normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" disabledimage="file='imgs/close_n_click_p.png' source='22,0,33,11'"/>
+	</HorizontalLayout>
+
+    <TabLayout name="recovery_tab" selectedid="0" padding="1,0,0,0">
+		<!--recovery page-->
+        <HorizontalLayout>
+            <AsDownloadRomFrame />
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <AsRomCheckFrame />
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <AsRecoveryInstallFrame />
+        </HorizontalLayout>
+      <!--other-->
+    </TabLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,575" mininfo="990,575" maxinfo="990,575" caption="0,0,0,33" showdirty="false">
+  <Include source="style.xml" />
+	<HorizontalLayout width="990" height="575" bkimage="file='imgs/bg.png'">
+	  <Control height="575" width="1" bkimage="imgs\sp_1.png"/>
+	  <VerticalLayout name="bg" width="988"  childalign="center" align="center">
+	  <Control width="990" height="1" bkimage="imgs\sp_3.png"/>
+		<HorizontalLayout height="32" padding="5,0,5,0" childalign="right" >
+			<Control bkimage="imgs/mi.png" height="13" width="20"  padding="10,0,0,0"/>
+			<Label text="File Manager" align="left" padding="5,0,5,0"/>
+			<Button name="closebtn" align="right" width="11" height="11" maxheight="29" maxwidth="31" normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+			<HorizontalLayout width="11" />
+		</HorizontalLayout>
+		<Control width="990" height="1" bkimage="imgs\sp_3.png"/>
+		<HorizontalLayout name="bg1" height="540">
+		<VerticalLayout width="155" bkimage="file='imgs/bg_paishelan.png'">
+			<Option name="pic_op" font="14" textcolor="#9a9aa7" hottextcolor="#ff7e41" selectedtextcolor="#ff7e41" height="15" selected="true" align="left" group="mgr_options" text="      Pictures" padding="52,14,0,0"
+			normalimage="file='imgs/icon_pic_n_click_p.png' source='0,0,15,15' dest='0,0,15,15'" 
+			hotimage="file='imgs/icon_pic_n_click_p.png' source='15,0,30,15' dest='0,0,15,15'" 
+			selectedimage="file='imgs/icon_pic_n_click_p.png' source='30,0,45,15' dest='0,0,15,15'"/>
+			
+			<Option name="video_op" font="14" textcolor="#9a9aa7" hottextcolor="#ff7e41" selectedtextcolor="#ff7e41" height="15" align="left" group="mgr_options" text="      Videos" padding="52,22,0,0"
+			normalimage="file='imgs/icon_vido_n_click_p.png' source='0,0,16,15' dest='0,0,16,15'" 
+			hotimage="file='imgs/icon_vido_n_click_p.png' source='16,0,32,15' dest='0,0,16,15'" 
+			selectedimage="file='imgs/icon_vido_n_click_p.png' source='32,0,48,15' dest='0,0,16,15'"/>
+			
+			<Option name="files_op" font="14" textcolor="#9a9aa7" hottextcolor="#ff7e41" selectedtextcolor="#ff7e41" height="16" align="left" group="mgr_options" text="      File Manager" padding="52,22,0,0"
+			normalimage="file='imgs/icon_files_n_click_p.png' source='0,0,14,15' dest='0,0,14,15'" 
+			hotimage="file='imgs/icon_files_n_click_p.png' source='14,0,28,15' dest='0,0,14,15'" 
+			selectedimage="file='imgs/icon_files_n_click_p.png' source='28,0,42,15' dest='0,0,14,15'"/>
+		</VerticalLayout>
+
+		<Control height="573" width="1" bkimage="imgs\sp_1.png"/>
+		<TabLayout name="tab_layout" selectedid="0" height="573" padding="0,0,1,0">
+			<HorizontalLayout>
+				<MgrPicPageFrame />
+			</HorizontalLayout>
+			
+			<HorizontalLayout>
+				<MgrVideoPageFrame />
+			</HorizontalLayout>
+			
+			<HorizontalLayout>
+				<MgrFilesPageFrame />
+			</HorizontalLayout>
+		</TabLayout>
+
+	  </HorizontalLayout>
+	  <Control width="990" height="1" bkimage="imgs\sp_3.png"/>
+	  </VerticalLayout>
+	  <Control height="575" width="1" bkimage="imgs\sp_1.png"/>
+	</HorizontalLayout>
+</Window>

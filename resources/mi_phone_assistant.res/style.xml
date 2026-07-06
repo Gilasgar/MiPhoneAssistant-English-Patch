@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font name="Segoe UI" size="12" id="12" />
+  <Font name="Segoe UI" size="12" id="bold_12" bold="true" />
+  <Font name="Segoe UI" size="12" id="underline_12" underline="true"/>
+  <Font name="Segoe UI" size="12" id="strikeout_12" strikeout="true"/>
+  <Font name="Segoe UI" size="13" id="13" />
+  <Font name="Segoe UI" size="13" id="bold_13" bold="true" />
+  <Font name="Segoe UI" size="14" id="default" default="true" />
+  <Font name="Segoe UI" size="14" id="bold_14" bold="true" />
+  <Font name="Segoe UI" size="14" id="underline_14" underline="true" />
+  <Font name="Segoe UI" size="15" id="15" />
+  <Font name="Segoe UI" size="15" id="bold_15" bold="true" />
+  <Font name="Segoe UI" size="16" id="16" />
+  <Font name="Segoe UI" size="16" id="bold_16" bold="true" />
+  <Font name="Segoe UI" size="16" id="underline_16" underline="true"/>
+  <Font name="Segoe UI" size="17" id="17" />
+  <Font name="Segoe UI" size="17" id="bold_17" bold="true" />
+  <Font name="Segoe UI" size="18" id="18" />
+  <Font name="Segoe UI" size="18" id="bold_18" bold="true" />
+  <Font name="Segoe UI" size="19" id="19" />
+  <Font name="Segoe UI" size="20" id="20" />
+  <Font name="Segoe UI" size="22" id="22" />
+  <Font name="Segoe UI" size="22" id="bold_22" bold="true" />
+  <Font name="Segoe UI" size="24" id="24" />
+  <Font name="Segoe UI" size="24" id="bold_24" bold="true" />
+  <Font name="Segoe UI" size="28" id="28" />
+  <Font name="Segoe UI" size="30" id="30" />
+  <Font name="Segoe UI" size="32" id="32" />
+  <Font name="Segoe UI" size="32" id="bold_32" bold="true" />
+  <Font name="Segoe UI" size="36" id="36" />
+  <Font name="Segoe UI" size="36" id="bold_36" bold="true" />
+  <Font name="Segoe UI" size="40" id="40" />
+  <Font name="Segoe UI" size="46" id="46" />
+  <Font name="Segoe UI" size="48" id="48" />
+  <Font name="Segoe UI" size="48" id="bold_48" bold="true" />
+  <Font name="Segoe UI" size="52" id="52" />
+  <Font name="Segoe UI" size="60" id="60" />
+  <Font name="Segoe UI" size="64" id="64" />
+  <Font name="Segoe UI" size="68" id="68" />
+  <Font name="Segoe UI" size="12" id="songti_12" />
+  <Font name="Segoe UI" size="12" id="songti_underline_12" underline="true"/>
+  <Font name="Segoe UI" size="12" id="songti_bold_12" bold="true"/>
+  <Font name="arial" size="12" id="arial_12" />
+  <Font name="arial" size="16" id="arial_blod_16" bold="true"/>
+  <Default name="VScrollBar" value="width=&quot;6&quot; thumbnormalimage=&quot;file='imgs/scroll_bar.png' source='0,0,8,100' corner='3,3,3,3' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='imgs/scroll_bar.png' source='0,0,8,100' corner='3,3,3,3' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='imgs/scroll_bar.png' source='0,0,8,100' corner='3,3,3,3' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='file='imgs/scroll_bar.png' source='0,0,8,100' corner='3,3,3,3' mask='#FFFF00FF'&quot; " />
+  <Default name="HScrollBar" value="height=&quot;6&quot; thumbnormalimage=&quot;file='imgs/error_progress_bar.png' source='0,0,11,6' corner='3,3,3,3' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='imgs/error_progress_bar.png' source='0,0,11,6' corner='3,3,3,3' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='imgs/error_progress_bar.png' source='0,0,11,6' corner='3,3,3,3' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='file='imgs/error_progress_bar.png' source='0,0,11,6' corner='3,3,3,3' mask='#FFFF00FF'&quot; " />
+  <Default name="Button" value="normalimage=&quot;file='btns/common_btn.png' source='0,0,142,42' corner='3,3,3,3'&quot; hotimage=&quot;file='btns/common_btn.png' source='142,0,284,42' corner='3,3,3,3'&quot;
+          pushedimage=&quot;file='btns/common_btn.png' source='284,0,426,42' corner='3,3,3,3'&quot; textcolor='#000000'" />
+  <Default name="CheckBox" value="normalimage=&quot;file='btns/checkbox_list_bg.png' source='0,0,14,14'&quot; selectedimage=&quot;file='btns/checkbox_list.png' source='0,0,14,14'&quot; disabledimage=&quot;file='btns/checkbox_list_bg.png' source='42,0,56,14'&quot;"/>
+  <Default name="Label" value="textcolor=&quot;#656565&quot; align=&quot;center&quot; endellipsis=&quot;true&quot;"/>
+  <Default name="VerticalLayout" value="childalign=&quot;center&quot; childvalign=&quot;vcenter&quot;"/>
+  <Default name="HorizontalLayout" value="childalign=&quot;center&quot; childvalign=&quot;vcenter&quot;"/>
+  <Default name="Text" value="endellipsis=&quot;true&quot; valign=&quot;vcenter&quot;"/>
+  <Default name="List" value="vscrollbar=&quot;true&quot; hscrollbar=&quot;true&quot; headerbkimage=&quot; file='imgs/list_header_bg.png'&quot; bordersize=&quot;1&quot; bordercolor=&quot;#bcbcbc&quot; "/>
+  <Default name="ListHeaderItem" value="hotimage=&quot;file='imgs/list_header_hot.png'&quot; pushedimage=&quot;file='imgs/list_header_pushed.png'&quot; sepimage=&quot;file='imgs/list_header_sep.png'&quot;sepwidth='1'" />
+  <Default name="Combo" value="normalimage=&quot;file='imgs/Combo_nor.png' corner='2,2,30,2'&quot; hotimage=&quot;file='imgs/Combo_over.png' corner='2,2,30,2'&quot;
+          pushedimage=&quot;file='imgs/Combo_over.png' corner='2,2,30,2''&quot; textcolor='#000000' textpadding=&quot;1,1,1,1&quot; " />
+  <!-- localized -->
+  <Default name="Menu" value="bordersize=&quot;1&quot; borderround=&quot;1,1&quot; bordercolor=&quot;0xFF303132&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;30,0,0,0&quot; bkimage=&quot;file='menu_bk.png' corner='26,2,2,2' source='6,6,44,24'&quot; itemselectedbkcolor=&quot;0xFF338ACA&quot;" />
+</Window>

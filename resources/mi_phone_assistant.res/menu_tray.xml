@@ -1,0 +1,28 @@
+<?xml veriion="1.0" encoding="utf-8"?>  
+<Window bktrans="true" size="115,200">  
+ <Font id="0" name="Arial" size="13" bold="false"/>
+ <Font id="1" name="Arial" size="12"/>
+<VerticalLayout bkimage="file='imgs/bg_menu.png' iource='2,5,114,157'">  
+    <List bordercolor="#dcdee1" bordersize="9" header="hidden" inset="8,8,8,8" itemhotimage="file='imgs/menu_hot_bk.png' corner='2,2,2,2'" itemdisabledbkcolor="#F2F2F2">  
+        <ListContainerElement name="set_item" height="35" width="200" padding="1,1,1,1" inset="20,0,0,0">  
+			<Label text="Settings" textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement>  
+		
+		<ListContainerElement name="help_item" height="35" padding="1,0,1,0" inset="20,0,0,0" >  
+            <Label text="Help"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement>  
+		
+        <ListContainerElement name="update_item" height="35" padding="1,0,1,0" inset="20,0,0,0">  
+            <Label text="Update" textcolor="#444c58" mouse="false"  padding="11,0,0,0"/>  
+        </ListContainerElement>  
+		
+		<ListContainerElement name="about_item" height="35" padding="1,0,1,1" inset="20,0,0,0" >
+            <Label text="About"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement> 
+		
+		<ListContainerElement name="exit_item" height="35" padding="1,0,1,1" inset="20,0,0,0" >
+            <Label text="Exit"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement> 
+    </List>  
+</VerticalLayout> 
+</Window> 

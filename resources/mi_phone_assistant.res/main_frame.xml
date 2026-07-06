@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,699" mininfo="990,699" maxinfo="990,699" caption="0,0,0,95" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_big.png'" childalign="center" align="center">
+    <HorizontalLayout name="tool_bar" height="90" align="left">
+		<!-- localized -->
+		<Button name="main_page_btn" text="Connect Phone" padding="1,1,0,0" multiline="true" textcolor="#FFFFFF" hottextcolor="#FFFFFF" pushedtextcolor="#FFFFFF" selectedtextcolor="#FFFFFF" width="156" height="90" 
+		normalimage="file='imgs/bg_big.png' source='1,1,157,91'" hotimage="file='imgs/bg_big.png' source='1,1,157,91'" pushedimage="file='imgs/bg_big.png' source='1,1,157,91'" />
+		<Button name="main_page_btn1" visible="false" text="Connect Phone" padding="0,0,0,0" multiline="true" textcolor="#FFFFFF" hottextcolor="#FFFFFF" pushedtextcolor="#FFFFFF" selectedtextcolor="#FFFFFF" width="156" height="90" 
+		normalimage="file='imgs/ico_home.png' source='156,0,312,90'" hotimage="file='imgs/ico_home.png' source='156,0,312,90'" pushedimage="file='imgs/ico_home.png' source='156,0,312,90'"/>
+        <HorizontalLayout width="20" />
+
+		<Button name="back_up_btn" text="Backup" multiline="true" textcolor="#999aa7" hottextcolor="#ff7e41" pushedtextcolor="#ff7e41" selectedtextcolor="#ff7e41" width="90" height="90" padding="10,0,10,0" 
+		normalimage="file='imgs/icon_back_n_click_p.png' source='0,0,90,90'" hotimage="file='imgs/icon_back_n_click_p.png' source='90,0,180,90'" pushedimage="file='imgs/icon_back_n_click_p.png' source='180,0,270,90'" />
+		<Button name="back_up_btn1" visible="false" text="Backup" multiline="true" textcolor="#ff7e41" hottextcolor="#ff7e41" pushedtextcolor="#ff7e41" selectedtextcolor="#ff7e41" width="90" height="90" padding="10,0,10,0" 
+		normalimage="file='imgs/icon_back_n_click_p.png' source='180,0,270,90'" hotimage="file='imgs/icon_back_n_click_p.png' source='90,0,180,90'" pushedimage="file='imgs/icon_back_n_click_p.png' source='180,0,270,90'"/>
+		
+		<Button name="restore_btn" text="Restore" multiline="true" textcolor="#999aa7" hottextcolor="#ff7e41" pushedtextcolor="#ff7e41" selectedtextcolor="#ff7e41" width="90" height="90" padding="10,0,10,0"  
+		normalimage="file='imgs/icon_restore_n_click_p.png' source='0,0,89,90'" hotimage="file='imgs/icon_restore_n_click_p.png' source='91,0,180,90'" pushedimage="file='imgs/icon_restore_n_click_p.png' source='181,0,270,90'"/>
+		<Button name="restore_btn1" visible="false" text="Restore" multiline="true" textcolor="#ff7e41" hottextcolor="#ff7e41" pushedtextcolor="#ff7e41" selectedtextcolor="#ff7e41" width="90" height="90" padding="10,0,10,0"  
+		normalimage="file='imgs/icon_restore_n_click_p.png' source='181,0,270,90'" hotimage="file='imgs/icon_restore_n_click_p.png' source='91,0,180,90'" pushedimage="file='imgs/icon_restore_n_click_p.png' source='181,0,270,90'"/>
+		
+		<Button name="run_flash_btn" select="true" text="Flash" multiline="true" textcolor="#999aa7" hottextcolor="#ff7e41" pushedtextcolor="#ff7e41" selectedtextcolor="#ff7e41" width="90" height="90" padding="10,0,10,0"  
+		normalimage="file='imgs/icon_flash_n_click_p.png' source='0,0,90,90'" hotimage="file='imgs/icon_flash_n_click_p.png' source='92,0,182,80' dest='0,0,90,80'" pushedimage="file='imgs/icon_flash_n_click_p.png' source='181,0,269,90'  dest='0,0,86,90'" />
+		<Button name="run_flash_btn1" visible="false" text="Flash" multiline="true" textcolor="#ff7e41" hottextcolor="#ff7e41" pushedtextcolor="#ff7e41" selectedtextcolor="#ff7e41" width="90" height="90" padding="10,0,10,0" 
+		normalimage="file='imgs/icon_flash_n_click_p.png' source='181,0,269,90'  dest='0,0,86,90'" hotimage="file='imgs/icon_flash_n_click_p.png' source='92,0,182,80' dest='0,0,90,80'" pushedimage="file='imgs/icon_flash_n_click_p.png' source='181,0,269,90'  dest='0,0,86,90'"/>
+		
+		<VerticalLayout />
+		<VerticalLayout width="300">
+			<HorizontalLayout childalign="center" childvalign="enter">
+				<HorizontalLayout width="11" padding="222"/>
+				<Button name="menu_btn" width="12" height="10" 
+				   normalimage="file='imgs/set_n_click_p.png' source='0,0,12,10'" hotimage="file='imgs/set_n_click_p.png' source='12,0,24,10'" pushedimage="file='imgs/set_n_click_p.png' source='24,0,36,10'" />
+				<HorizontalLayout width="11" />
+				<Button name="minbtn" width="11" height="11"
+						normalimage="file='imgs/min_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/min_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/min_n_click_p.png' source='22,0,33,11'" />
+				<HorizontalLayout width="11" />
+				<Button name="main_close_btn" width="11" height="11"
+				normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'"/>
+				<HorizontalLayout width="12" />
+			</HorizontalLayout>
+			<HorizontalLayout height="60"/>
+		</VerticalLayout>
+    </HorizontalLayout>
+
+    <TabLayout name="as_main_tab" selectedid="4" height="573" padding="1,0,1,0">
+		<!--recovery page-->
+        <HorizontalLayout>
+            <AsRecoveryUnconnectFrame />
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <AsRecoveryConnectFrame />
+        </HorizontalLayout>
+		<!--fastboot page-->
+		<HorizontalLayout>
+            <AsFastbootConnectFrame />
+        </HorizontalLayout>
+		<!--home page-->
+		<HorizontalLayout>
+            <HomeConnectFrame />
+        </HorizontalLayout>
+		
+		<!--back up page-->
+		<HorizontalLayout>
+            <BackUpOperateFrame />
+        </HorizontalLayout>
+		
+		<HorizontalLayout>
+            <AdbProblemFrame />
+        </HorizontalLayout>
+		
+		<!--restore page-->
+		<HorizontalLayout>
+            <RestoreOperateFrame />
+        </HorizontalLayout>
+      <!--other-->
+    </TabLayout>
+
+    <HorizontalLayout name="status_bar" height="36">
+      <HorizontalLayout padding="0,0,0,0">
+		<HorizontalLayout height="30"  width="260" padding="0,10,0,0">
+            <Label name="as_version" text="Current version: 1.1.1111.15" font="12" textcolor="#999999" align="left" padding="10,0,0,0" width="150" height="18"/>
+        </HorizontalLayout>
+      </HorizontalLayout>
+	  <HorizontalLayout />
+	  <Button name="feedback" text="{u}Feedback{/u}" showhtml="true" font="12" textcolor="#999999"   width="80" height="18" normalimage="" hotimage="" pushedimage=""/>	
+	  
+	  <Control bkimage="file='imgs/update_ico.png'" height="16" width="16" padding="0,12,5,0" visible="false"/>
+	  <Button name="check_ver_as" text="{u}Check Update{/u}" visible="false" font="12" padding="0,0,10,0" showhtml="true" textcolor="#999999" valign="center" align="right" width="50" height="18" normalimage="" hotimage="" pushedimage="" />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

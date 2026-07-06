@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" mininfo="640,420" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_sec.png' source='53,128,773,548'" childalign="center" align="center">
+	<HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+		<Control bkimage="file='imgs/mi_sec.png'" height="13" width="20"  padding="10,0,0,0"/>
+		<Label text="Mi Flash Assistant" align="left" padding="5,0,5,0"/>
+			
+		<Button name="closebtn" align="right" width="11" height="11" 
+		normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'"/>
+		<HorizontalLayout width="12" />
+	</HorizontalLayout>
+	
+	<VerticalLayout height="86" />
+	<VerticalLayout name="occupay_layout" visible="false">
+		<Control bkimage="file='imgs/waring.png'" height="74" width="74"/>
+		<VerticalLayout height="18" />
+		<Label text="Your ADB port is occupied by the following program," font="18" textcolor="#444c58" />
+		<Label text="Close it before connecting the phone normally" font="18" textcolor="#444c58" />
+		<Label name="occupy_pro" text="" font="14" height="20" textcolor="#8b94a5" />
+		<VerticalLayout height="50" />
+
+		<Button name="kill" text="OK, close it" textcolor="#444c58" padding="193,0,0,0" font="14" height="38" width="116" align="center" />
+
+	</VerticalLayout>
+	
+	<VerticalLayout name="err_layout" visible="true">
+		<Control bkimage="file='imgs/waring.png'" height="74" width="74"/>
+		<VerticalLayout height="18" />
+		<Label text="Failed to close these programs" font="18" textcolor="#444c58" />
+		<Label name="err_pro" text="2323232(12132)" font="14" height="20" textcolor="#8b94a5" />
+		<Control height="90" bkimage="file='imgs/bg_sec.png' source='100,200,600,300'" />
+
+		<Button name="kill_help" text="{u}Can't close the program?{/u}" showhtml="true" textcolor="#5f86e2" font="15"  width="110" height="18" normalimage="" hotimage="" pushedimage=""/>	
+
+	</VerticalLayout>
+  </VerticalLayout>
+</Window>
+

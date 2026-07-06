@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="720,500" mininfo="720,500" caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" childalign="center" align="center">
+	<VerticalLayout name="flashing_layout" visible="true">	
+		<VerticalLayout height="30" />
+		<HorizontalLayout height="45">
+			<Label name="flash_pre" text="0" font="52" align="right" width="380" textcolor="#22a5f7" />
+			<Label text="%" font="22" width="340" align="left" valign="bottom" textcolor="#22a5f7" />
+		</HorizontalLayout>
+		<VerticalLayout height="7" />
+		<HorizontalLayout height="30">
+			<HorizontalLayout width="200" />
+			<Label name="flash_status" text="Flashing" width="200" align="right" font="22" height="30" textcolor="#444c58" />
+			<HorizontalLayout width="2" />
+			<VerticalLayout width="18" >
+				<VerticalLayout height="20" />
+				<GifAnim bkimage="imgs/point.gif" width="18" height="5"/>
+			</VerticalLayout>
+		</HorizontalLayout >
+		
+		<Label text="Do not disconnect the phone" font="16" height="23" textcolor="#8b94a5" />
+		<VerticalLayout height="30" />
+		<VerticalLayout name="update_log_layout" width="670"  height="195" visible="true">
+			<Label text="Update Log" font="14" padding="16,0,0,0" height="20" textcolor="#444c58" align="left"/>
+			<Control bkimage="imgs\home_sp.png" padding="0,3,0,0" width="660" height="1" align="left"/>
+			<RichEdit name="update_text" padding="6,10,10,0" text="Fix lag when recording with dual cameras" backgroundtransparent="true" readonly="true" font="14" textcolor="#8b94a5" width="670"  height="175" vscrollbar="true" enabled="false"/>
+		</VerticalLayout>
+		<VerticalLayout name="update_info_layout" width="670"  height="195" visible="false">
+			<Label text="Phone Model" font="15" height="30" textcolor="#8b94a5" align="left"/>
+			<Label name="device" text="" font="15" height="23" textcolor="#8b94a5" align="left"/>
+			<VerticalLayout height="13"/>
+			<Label text="Version" font="15" height="30" textcolor="#8b94a5" align="left"/>
+			<Label name="version" text="Manually select ROM package to update" font="15" height="23" textcolor="#8b94a5" align="left"/>
+			<VerticalLayout height="13"/>
+			<Label text="Package Name" font="15" height="30" textcolor="#8b94a5" align="left"/>
+			<Label name="pakage_name" text="Manually select ROM package to update" font="15" height="23" textcolor="#8b94a5" align="left"/>
+		</VerticalLayout>
+
+		<VerticalLayout height="40" />
+		<Button text="Flashing" textcolor="#444c58" font="14" height="38" width="130" enabled="false"/>
+	</VerticalLayout>
+	
+	<VerticalLayout name="flashed_layout" visible="false">
+		<VerticalLayout height="32" />
+		<VerticalLayout visible="false" name="flash_succ" bkimage="file='imgs/flash_succ_bg.png' source='0,0,282,230'" width="282" height="230">
+			<VerticalLayout height="73" />
+			<Control bkimage="file='imgs/flash_succ_ico.png'" height="104" width="104" align="center" valign="center" />
+		</VerticalLayout>
+		<VerticalLayout visible="true" name="flash_err" width="282" height="230">
+			<VerticalLayout height="73" />
+			<Control bkimage="file='imgs/flash_err.png'" height="104" width="104" align="center" valign="center" />
+		</VerticalLayout>
+		<Label name="flash_result" text="Flash Successful" font="32" height="33" align="center" valign="bottom" textcolor="#444c58" />
+		<Label name="err_msg" text="" font="15" height="30" textcolor="#f16362" />
+		<VerticalLayout height="70" />
+		<Button name="finsh_btn" text="Done" textcolor="#444c58" font="14" height="38" width="130" padding="0,0,0,30"/>
+	</VerticalLayout>
+  </VerticalLayout>
+</Window>

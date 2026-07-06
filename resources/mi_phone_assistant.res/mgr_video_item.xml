@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="182, 160" float="true" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout >
+	  <VerticalLayout name="layout_all" visible="false" childalign="center" bkimage="imgs\bg_select.png">
+		<VerticalLayout bkimage="file='imgs/def_video.png' dest='65,28,105,68'" height="96" width="170" padding="6,6,6,0" >
+			<VerticalLayout name="pic" height="96" width="170" >
+				<HorizontalLayout name="layout_pic" childvalign="bottom" />
+			</VerticalLayout>
+		</VerticalLayout>
+		<HorizontalLayout height="22" padding="10,6,0,0">
+		  <Label name="name" text="Video Name" font="14" height="22" textcolor="#2c333a" align="left,top" padding="0, 0, 0, 0" />
+		  <Control name="yes_select" visible="false" width="14" height="14" padding="10,3,0,3" bkimage="file='imgs/box.png' source='14,0,28,14'"/>
+		  <Control name="no_select" visible="true" width="14" height="14" padding="10,3,0,3" bkimage="file='imgs/box.png' source='0,0,14,14'"/>
+		</HorizontalLayout>
+		
+		<HorizontalLayout height="12" padding="10,2,0,0">
+		  <Label name="size" text="Video Size" font="12" width="60" textcolor="#8b94a5" align="left,venter" padding="0, 0, 0, 0" />
+		  <Control align="left,venter" padding="2, 0, 0, 0" height="12" width="1" bkimage="imgs\sp_1.png"/>
+		  <Label name="len" text="Video Length" font="12" textcolor="#8b94a5" align="left,venter" padding="5, 0, 0, 0" />
+		</HorizontalLayout>
+	  </VerticalLayout>
+	  
+	  <VerticalLayout name="layout_all_1" visible="true" childalign="center" >
+		<VerticalLayout bkimage="file='imgs/def_video.png' dest='65,28,105,68'" height="96" width="170" padding="6,6,6,0" >
+			<VerticalLayout name="pic1" height="96" width="170" >
+				<HorizontalLayout name="layout_pic1" childvalign="bottom" />
+			</VerticalLayout>
+		</VerticalLayout>
+		<HorizontalLayout height="22" padding="10,6,0,0">
+		  <Label name="name1" text="Video Name" font="14" height="22" textcolor="#2c333a" align="left,venter" padding="0, 0, 0, 0" />
+		  <Control name="yes_select1" visible="false" width="14" height="14" padding="10,3,0,3" bkimage="file='imgs/box.png' source='14,0,28,14'"/>
+		  <Control name="no_select1" visible="true" width="14" height="14" padding="10,3,0,3" bkimage="file='imgs/box.png' source='0,0,14,14'"/>
+		</HorizontalLayout>
+		
+		<HorizontalLayout height="12" padding="10,2,0,0">
+		  <Label name="size1" text="Video Size" font="12" width="60" textcolor="#8b94a5" align="left,venter" padding="0, 0, 0, 0" />
+		  <Control align="left,venter" padding="2, 0, 0, 0" height="12" width="1" bkimage="imgs\sp_1.png"/>
+		  <Label name="len1" text="Video Length" font="12" textcolor="#8b94a5" align="left,venter" padding="5, 0, 0, 0" />
+		</HorizontalLayout>
+	  </VerticalLayout>
+	</VerticalLayout>
+</Window>

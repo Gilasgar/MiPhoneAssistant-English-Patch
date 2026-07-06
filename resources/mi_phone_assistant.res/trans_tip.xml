@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="224,72" caption="0,0,0,35" layeredimage="imgs/bg_tip_2.png" layeredopacity="255">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/screenshot.png'" childalign="left" align="left">
+	<HorizontalLayout height="22" padding="0,3,0,0" childalign="left">
+		<Label text="Name:" align="left" width="40" padding="10,0,0,0" font="12" textcolor="#ffffff" />
+		<Label name="name_v" align="left" width="280" text="12123123" padding="0,0,0,0" font="12" height="20" textcolor="#ffffff" />
+	</HorizontalLayout>
+
+	<HorizontalLayout height="22" padding="0,0,0,0" childalign="left">
+		<Label text="Time:" align="left" width="40" padding="10,0,0,0" font="12" textcolor="#ffffff" />
+		<Label name="time_v" align="left" width="280" text="12123123" padding="0,0,0,0" font="12" height="20" textcolor="#ffffff" />
+	</HorizontalLayout>
+
+	<HorizontalLayout height="22" childalign="left" align="left">
+		<Label text="Size:" align="left" width="40" padding="10,0,0,0" font="12" textcolor="#ffffff" />
+		<Label name="size_v" align="left" width="280" text="5555555555555" font="12" textcolor="#ffffff" height="20"/>
+	</HorizontalLayout>
+
+  </VerticalLayout>
+</Window>

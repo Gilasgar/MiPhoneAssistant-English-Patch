@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,580" mininfo="990,580" caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <HorizontalLayout name="bg" bkimage="file='imgs/bg_update.png' source='60,60,500,300'" >
+
+	<TabLayout name="frame_tab" height="431" width="216" padding="70,100,0,0" selectedid="0">
+		<VerticalLayout name="phoen_screen_1" childvalign="bottom" bkimage="file='imgs\screenshot.png' dest='9,41,206,384' " height="431" width="216" >
+			<HorizontalLayout name="phone_frame_1" childvalign="bottom" bkimage="imgs\16.9.png">
+				<HorizontalLayout bkimage="imgs\phone_mask.png" valign="bottom" height="167" width="197" childvalign="bottom" padding="9,0,0,47">
+					<Button name="screen_shot_1" text="Screenshot" textcolor="#ffffff" hottextcolor="#eeeeee" pushedtextcolor="#dddddd" padding="45,0,0,10" font="12" height="30" width="30" normalimage="" hotimage="" pushedimage=""/>
+					<Button name="refurbish_1" text="Refresh" textcolor="#ffffff" hottextcolor="#eeeeee" pushedtextcolor="#dddddd" padding="50,0,0,10" font="12" height="30" width="30" normalimage="" hotimage="" pushedimage=""/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+
+		<VerticalLayout name="phoen_screen_2" childvalign="bottom" bkimage="file='imgs\screenshot.png' dest='6,12,210,391' " height="431" width="216" >
+			<HorizontalLayout name="phone_frame_2" childvalign="bottom" bkimage="imgs\17.9.png">
+				<HorizontalLayout bkimage="imgs\phone_mask_17_9.png" valign="bottom" height="164" width="204" childvalign="bottom" padding="6,0,0,39">
+					<Button name="screen_shot_2" text="Screenshot" textcolor="#ffffff" hottextcolor="#eeeeee" pushedtextcolor="#dddddd" padding="45,0,0,10" font="12" height="30" width="30" normalimage="" hotimage="" pushedimage=""/>
+					<Button name="refurbish_2" text="Refresh" textcolor="#ffffff" hottextcolor="#eeeeee" pushedtextcolor="#dddddd" padding="50,0,0,10" font="12" height="30" width="30" normalimage="" hotimage="" pushedimage=""/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+
+		<VerticalLayout name="phoen_screen_3" childvalign="bottom" bkimage="file='imgs\screenshot.png' dest='8,7,208,403' " height="431" width="216" >
+			<HorizontalLayout name="phone_frame_3" childvalign="bottom" bkimage="imgs\18.9.png">
+				<HorizontalLayout bkimage="imgs\phone_mask_18_9.png" valign="bottom" height="160" width="200" childvalign="bottom" padding="8,0,0,27">
+					<Button name="screen_shot_3" text="Screenshot" textcolor="#ffffff" hottextcolor="#eeeeee" pushedtextcolor="#dddddd" padding="45,0,0,10" font="12" height="30" width="30" normalimage="" hotimage="" pushedimage=""/>
+					<Button name="refurbish_3" text="Refresh" textcolor="#ffffff" hottextcolor="#eeeeee" pushedtextcolor="#dddddd" padding="50,0,0,10" font="12" height="30" width="30" normalimage="" hotimage="" pushedimage=""/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</TabLayout>
+
+	<VerticalLayout  width="66"/>
+	<VerticalLayout  childalign="left">
+	
+		<VerticalLayout  childalign="left" width="514" height="253" padding="30,100,0,0">
+			<Label text="" padding="35,0,0,0" font="14" height="20" textcolor="#8b94a5"  align="left"/>
+			
+			<VerticalLayout  childalign="center" height="120" padding="10,20,0,0">
+				<Label text="Mi Assistant 3.0" font="20" textcolor="#8b94a5" align="left"/>
+				<Label text="Redesigned and ready" font="40" textcolor="#8b94a5"  align="left"/>
+			</VerticalLayout>
+
+			<HorizontalLayout height="54" padding="0,0,0,0">
+
+				<VerticalLayout  childalign="left" height="54" width="160" childalign="center" childvalign="center" bkimage="imgs/btn_blue_shadw.png" >
+					<Button name="conn_questions" text="FAQ" font="14" height="38" width="130" textcolor="#FFFFFF"
+					normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'"/>
+				</VerticalLayout>
+				
+				<VerticalLayout  childalign="left" height="54" width="160" childalign="center" childvalign="center" bkimage="imgs/btn_blue_shadw.png" >
+					<Button name="conn_bbs" text="Community" font="14" height="38" width="130" textcolor="#FFFFFF"
+					normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'"/>
+				</VerticalLayout>
+
+			</HorizontalLayout>
+
+		</VerticalLayout>
+
+		<HorizontalLayout width="514" height="163" padding="0,0,0,0" roundcorner="10,10,10,10">
+			<VerticalLayout  childalign="left" width="270" padding="40,0,0,0">
+				<HorizontalLayout  height="20" padding="0,26,0,0">
+					<Label text="Device Model:" font="15" textcolor="#8b94a5"  width="85" align="left"/>
+					<Label name="device_name" font="14" text="No device connected" textcolor="#8b94a5"  align="left"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  height="20" padding="0,25,0,0">
+					<Label text="MIUI Version:" font="15" textcolor="#8b94a5"  width="85" align="left"/>
+					<Label name="miui_ver" font="14" text="7.10.19" textcolor="#8b94a5"  align="left"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+			<VerticalLayout  childalign="left" padding="0,0,0,0">
+				<HorizontalLayout  height="20" padding="0,25,0,0">
+					<Label text="Serial Number:" font="15" textcolor="#8b94a5"  width="85" align="left"/>
+					<Label name="serial_num" font="14" text="123456798" textcolor="#8b94a5"  align="left"/>
+				</HorizontalLayout>
+
+				<HorizontalLayout height="20" padding="0,25,0,0">
+					<Label text="Android Version:" font="15" textcolor="#8b94a5"  width="85" align="left"/>
+					<Label name="android_ver" font="14" text="7.10.19" textcolor="#8b94a5"  align="left"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+
+		
+	</VerticalLayout>
+  </HorizontalLayout>
+</Window>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,573" mininfo="990,573" caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout >
+	  <VerticalLayout height="32" bkimage="imgs/bg_tip.png" padding="1,0,1,0">
+				<Label text="Tip: During restore, temporarily close QQ and other phone assistant tools" height="32" textcolor="#ffb040" bkcolor="#fef0db" bordercolor="#fef0db"/>
+	  </VerticalLayout>
+	  
+	  <VerticalLayout name="bg" bkimage="file='imgs/bg_big.png' source='29,140,900,600'" height="541" >
+		
+	  <TabLayout name="as_main_tab" selectedid="1" height="142" padding="0,50,0,0">
+		<!-- localized -->
+		<HorizontalLayout name="guide_layout" height="105" padding="0,20,0,35">
+			<HorizontalLayout width="305"/>
+			<Control bkimage="imgs\cloud.png" height="105" width="172" />
+			<VerticalLayout padding="75,0,1,0" childalign="left">
+				<Label name="guide_tip" text="Select a file to restore data" textcolor="#444c58" font="19" align="left" height="25"/>
+				<Button name="guide_select_dir" align="left" text="{u}Select another backup file{/u}" showhtml="true" textcolor="#8b94a5" padding="0,0,0,0" font="14" height="30" width="135" normalimage="" hotimage="" pushedimage=""/>
+				<HorizontalLayout height="48">
+					<Button name="next_step" text="Restore to Phone" textcolor="#444c58" padding="0,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_blue_n_click_p.png' source='468,0,624,38' corner='5,5,5,5'"/>
+					<Button name="open_set_dir" text="Export Locally" textcolor="#444c58" padding="30,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_blue_n_click_p.png' source='468,0,624,38' corner='5,5,5,5'"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		
+		<!-- localized -->
+		<HorizontalLayout name="select_layout" height="105" padding="0,20,0,35">
+			<HorizontalLayout width="305"/>
+			<Control bkimage="imgs\cloud.png" height="105" width="172" />
+			<VerticalLayout padding="75,0,1,0" childalign="left">
+				<Label name="select_tip" text="Select data to back up" textcolor="#444c58" font="19" align="left" height="25"/>
+				<Label name="select_time" text="Estimated time: 30 minutes" align="left" textcolor="#8b94a5" padding="0,0,0,0" font="14" height="30"  />
+				<HorizontalLayout height="48">
+					<Button name="start_restore" text="Start Restore" padding="0,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_blue_n_click_p.png' source='468,0,624,38' corner='5,5,5,5'"/>
+					<Button name="back_select" text="Back" textcolor="#444c58" padding="30,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_blue_n_click_p.png' source='468,0,624,38' corner='5,5,5,5'"/>
+				</HorizontalLayout>
+				</VerticalLayout>
+		</HorizontalLayout>
+		
+		<!-- localized -->
+		<HorizontalLayout name="ing_layout" height="140" padding="0,2,0,0">
+			<HorizontalLayout width="290"/>
+			<VerticalLayout childalign="left" width="140" height="140" >
+				<GifAnim bkimage="imgs/icon_back_ing.gif" width="140" height="140"/>
+				<Label name="back_up_pre" textcolor="#1cb95f" text="0" font="64" float="true" pos="15,40,120,100" />
+				<Label text="%" font="19" textcolor="#1cb95f" float="true" pos="110,70,130,100" />
+			</VerticalLayout>
+			<VerticalLayout padding="67,35,1,0" childalign="left" >
+				<Label text="Restoring. Do not disconnect" textcolor="#444c58" font="19" align="left" height="25"/>
+				<Label name="ing_time" text="Estimated time: 30 minutes" align="left" textcolor="#8b94a5" padding="0,0,0,0" font="14" height="30"  />
+				<Button name="restore_cancel" text="Cancel" padding="0,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" normalimage="file='imgs/btn_gray_n_click_p.png' source='0,0,126,38' corner='5,5,5,5'" hotimage="file='imgs/btn_gray_n_click_p.png' source='126,0,252,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_gray_n_click_p.png' source='252,0,378,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		
+		<!-- localized -->
+		<HorizontalLayout name="succ_layout" height="118" padding="0,20,0,22">
+			<HorizontalLayout width="305"/>
+			<Control bkimage="file='imgs/icon_back_succ.png'" height="118" width="118" />
+			<VerticalLayout padding="75,10,0,0" childalign="left">
+				<Label name="succ_tip" text="Select data to back up" textcolor="#444c58" font="19" align="left" height="25"/>
+				<!-- localized -->
+				<Label text="Data restored successfully!" align="left" textcolor="#8b94a5" font="14" height="30"/>
+				<Button name="succ_ok" text="Done" padding="0,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" normalimage="file='imgs/btn_green_n_click_p_d.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_green_n_click_p_d.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_green_n_click_p_d.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_green_n_click_p_d.png' source='468,0,624,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		
+		<!-- localized -->
+		<HorizontalLayout name="err_layout" height="118"  padding="0,20,0,22">
+			<HorizontalLayout width="305"/>
+			<Control bkimage="file='imgs/icon_back_err.png'" height="118" width="118" />
+			<VerticalLayout padding="75,10,1,0" childalign="left" >
+				<Label name="err_tip" text="Selected data: 15G" textcolor="#444c58" font="19" align="left" height="25"/>
+				<Label name="err_msg" text="Not enough phone storage. Select another restore file or free up phone space" align="left" textcolor="#f16362" font="14" height="30" />
+				<Button name="re_select_file" text="Select Backup File Again" padding="0,10,0,0" font="15" height="38" width="156" textcolor="#ffffff" normalimage="file='imgs/btn_red_n_click_p_d.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_red_n_click_p_d.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_red_n_click_p_d.png' source='312,0,468,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+      </TabLayout>
+		
+		<VerticalLayout  height="23" />
+		
+		<!-- localized -->
+		<VerticalLayout name="restore_dir_select" padding="0,0,0,0" height="242" width="730" visible="true">
+			<Label text="Select a backup file to restore" font="14" textcolor="#8b94a5" align="left"/>
+			<List name="dir_select_list" padding="0,0,0,0" bordercolor="#000000" itemhlinecolor="#FFFFFF" height="212" width="730" >
+				<ListHeader height="1">
+					<!-- localized -->
+					<Label text="" font="14" height="68" textcolor="#000000" padding="0,0,0,0" align="left,venter"/>
+				</ListHeader>
+			</List>
+		</VerticalLayout>
+		<!-- localized -->
+		<List name="restore_ing_list" padding="0,0,0,0" bordercolor="#000000" itemhotbkcolor="#000000" itemselectedbkcolor="#000000" itemhlinecolor="#FFFFFF" height="242" width="730" visible="false">
+			<ListHeader height="1">
+				<!-- localized -->
+				<Label text="" font="14" textcolor="#000000" align="left,venter"/>
+			</ListHeader>
+		</List>
+		
+		<!-- localized -->
+		<VerticalLayout name="select_package_layout" height="300" width="720" visible="true" padding="135">
+			<HorizontalLayout height="30" width="720" >
+				<Label text="Select data to restore" textcolor="#8b94a5"  width="672" align="left"/>
+				<HorizontalLayout  childalign="right" width="48">
+					<CheckBox name="set_auto_checkbtn" width="14" height="14" />
+					<Label name="set_auto_text" text="Select All" textcolor="#8b94a5" width="30" height="18" padding="5"/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+			
+			<Control bkimage="imgs\back_sp.png" height="1" padding="0,10,0,25" width="720" />
+		
+			<HorizontalLayout width="720" height="105" childvlign="top">
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_sms.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="sms_checkbtn" padding="43,0,0,0" width="14" height="14" />
+							<Label name="sms_text" text="Messages" width="80" height="18" textcolor="#8b94a5" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_contacts.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="contacts_checkbtn" padding="38,0,0,0" width="14" height="14" />
+							<Label name="contacts_text" text="Contacts" textcolor="#8b94a5" width="80" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_call_log.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="call_log_checkbtn" padding="20,0,0,0" width="14" height="14" />
+							<Label name="call_log_text" text="Call Records" textcolor="#8b94a5" width="80" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout  >
+						<Control bkimage="file='imgs\icon_system.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="system_checkbtn" padding="10,0,0,0" width="14" height="14" />
+							<Label name="system_text" text="System Apps" textcolor="#8b94a5" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+						<Button name="system_set" text="{u}Settings{/u}" showhtml="true" textcolor="#8b94a5" hottextcolor="#777777" pushedtextcolor="#555555" padding="0,0,0,0" font="14" height="30" width="66" normalimage="" hotimage="" pushedimage=""/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144">
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_app.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="app_checkbtn" padding="10,0,0,0" width="14" height="14" />
+							<Label name="app_text" text="Third-party Apps" textcolor="#8b94a5" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+						<Button name="app_set" text="{u}Settings{/u}" showhtml="true" textcolor="#8b94a5" hottextcolor="#777777" pushedtextcolor="#555555" padding="0,0,0,0" font="14" height="30" width="66" normalimage="" hotimage="" pushedimage=""/>
+					</VerticalLayout>
+				</HorizontalLayout>
+			</HorizontalLayout>
+			
+			<HorizontalLayout width="720" height="80" >
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_pic.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="pic_checkbtn" padding="38,0,0,0" width="14" height="14" />
+							<Label name="pic_text" text="Pictures" textcolor="#8b94a5" width="80" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_vido.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="video_checkbtn" padding="38,0,0,0" width="14" height="14" />
+							<Label name="video_text" text="Videos" textcolor="#8b94a5" width="80" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_music.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="music_checkbtn" padding="38,0,0,0" width="14" height="14" />
+							<Label name="music_text" text="Music" textcolor="#8b94a5" width="80" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout >
+						<Control bkimage="file='imgs\icon_doc.png' source='44,0,88,42'"  height="42" width="44" />
+						<HorizontalLayout  childalign="left" height="18">
+							<CheckBox name="doc_checkbtn" padding="38,0,0,0" width="14" height="14" />
+							<Label name="doc_text" text="Documents" textcolor="#8b94a5" width="80" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<HorizontalLayout  childalign="left" width="144" >
+					<VerticalLayout name="we_chat_layout">
+						<Control bkimage="file='imgs\wechat1.png'"  height="32" width="38" padding="0,5,0,0" />
+						<HorizontalLayout  childalign="left" height="18" padding="0,5,0,0">
+							<CheckBox name="chat_checkbtn" padding="18,0,0,0" width="14" height="14" />
+							<Label name="chat_text" text="WeChat Chat History" textcolor="#8b94a5" height="18" align="left" padding="5"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+		
+	  </VerticalLayout>
+	</VerticalLayout>
+</Window>

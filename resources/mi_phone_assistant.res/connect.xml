@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,573" mininfo="990,573"  caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout >
+	  <VerticalLayout height="32" bkimage="imgs/bg_tip.png" padding="0,0,0,0">
+			<Label text="Tip: During flashing, temporarily close QQ and other phone assistant tools" height="32" textcolor="#ffb040" bkcolor="#fef0db" bordercolor="#fef0db"/>
+	  </VerticalLayout>
+	  <HorizontalLayout name="bg" bkimage="file='imgs/bg_big.png' source='2,140,900,600'" height="541">
+		<VerticalLayout  width="105"/>
+		<VerticalLayout  width="215">
+			<VerticalLayout  height="60" />
+			<Control bkimage="imgs\recovery_link.png" height="431" width="215"/>
+		</VerticalLayout>
+		<VerticalLayout  width="121"/>
+		<VerticalLayout  childalign="left" width="592">
+			<VerticalLayout  height="125" />
+			<Label padding="22,0,0,0" name="phone_name" text=""  font="18" textcolor="#444c58" bold="true" align="left"/>
+			<Label padding="22,5,0,0" text=""  name="current_ver" font="14" height="23" textcolor="#8b94a5" align="left"/>
+			<HorizontalLayout padding="22,0,0,0" height="23" childalign="left">
+				<Label name="last_ver" text="" width="230" textcolor="#8b94a5"  align="left"/>
+				<Button name="update_log" text="{u}Update Log{/u}" visible="false" showhtml="true" textcolor="#5f86e2"  width="80" align="left" normalimage="" hotimage="" pushedimage=""/>
+			</HorizontalLayout>
+			
+			<VerticalLayout  height="13" />
+			<VerticalLayout  padding="0,0,0,0" childalign="left" height="54" width="200" childalign="center" childvalign="center" bkimage="file='imgs/btn_blue_shadw_d.png' source='200,0,400,54'" >
+				<Button name="download_rom" text="Download System Package and Flash" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" enabled="false"
+				normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_blue_n_click_p.png' source='468,0,624,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+			<VerticalLayout  height="2" />
+			<VerticalLayout  childalign="left" height="54" width="200" childalign="center" childvalign="center" bkimage="imgs/btn_blue_shadw.png" >
+				<Button name="select_flash_rom" text="Select Local Flash Package" font="14" height="38" width="156" textcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+			<VerticalLayout  height="34" />
+			<VerticalLayout  childalign="left" height="54" width="200" childalign="center" childvalign="center" bkimage="imgs/btn_gray_shadow.png" >
+				<Button name="clearn_data" text="Erase Data" font="14" height="38" width="156" textcolor="#444c58"
+				normalimage="file='imgs/btn_gray_n_click_p_d.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_gray_n_click_p_d.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_gray_n_click_p_d.png' source='312,0,468,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+			<VerticalLayout height="2" visible="false"/>
+			<VerticalLayout visible="false" childalign="left" height="54" width="200" childalign="center" childvalign="center" bkimage="imgs/btn_gray_shadow.png" >
+				<Label name="status_flash" text=" " height="18" textcolor="#ffb040" bkcolor="#fef0db" bordercolor="#fef0db"/>
+			</VerticalLayout>
+			
+		</VerticalLayout>
+	  </HorizontalLayout>
+   </VerticalLayout>
+</Window>

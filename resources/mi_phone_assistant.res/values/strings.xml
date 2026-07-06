@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Mi Recovery Flash Tool</string>
+  <string name="app_version_fmt">Version: %s</string>
+  <!-- net error code-->
+  <string name="net_error">Network error</string>
+  <string name="code_xxxxx">Unknown error [%d]</string>
+  <string name="code_2001">Cannot upgrade to an unofficial ROM package</string>
+  <string name="code_2002">This ROM is in internal testing. Download a released ROM from the forum</string>
+  <string name="code_2003">Rollback to versions older than the previous release is not supported</string>
+  <string name="code_2004">Developer builds can only flash the latest stable build. Download the latest stable build from the forum</string>
+  <string name="code_2005">Stable builds can only flash the latest developer build. Download the latest developer build from the forum</string>
+  <string name="code_2006">This ROM information was removed for internal reasons. Download the latest version from the forum</string>
+  <string name="code_2007">Current version is invalid. You can only fastboot flash the latest stable build</string>
+  <string name="code_2008">Cannot switch between developer and stable builds across Android versions. Try fastboot flashing</string>
+  <string name="code_2099">The selected ROM does not match the connected phone model, or another error occurred</string>
+  <string name="code_2009">Other reason</string>
+  
+  <string name="code_10000">10000: Invalid request parameters</string>
+  <string name="code_10001">10001: Signature verification failed</string>
+  <string name="code_10002">10002: Too many requests from the same IP</string>
+  <string name="code_10003">10003: Internal server error</string>
+  <string name="code_10004">10004: Request timed out</string>
+  
+  <string name="code_20030">Unlocking different devices requires an interval of more than 30 days</string>
+  <string name="code_20031">The account is not bound to this device</string>
+  <string name="code_20032">Failed to generate the signature required for unlocking</string>
+  <string name="code_20033">User profile score is too low or the account is blocked</string>
+  <string name="code_20034">The current account cannot unlock this device</string>
+  <string name="code_20035">Please download the latest unlock tool</string>
+  <string name="code_20036">The account has not been bound to the device long enough. Try again after %d hours</string>
+  <string name="code_20037">Unlock limit reached</string>
+  
+  <string name="select_ota_rom">Select update package...</string>
+  <string name="ota_rom_filter">Update package</string>
+  
+  <string name="geting_screem">Getting screenshot</string>
+  <string name="geting_sn">Getting serial number</string>
+  
+  <string name="geting_base_info">Getting phone basic information</string>
+  <string name="geting_split">Checking whether the phone is in second-space mode</string>
+  <string name="geting_app_ver">Getting phone backup app version</string>
+  <string name="geting_resolution">Getting phone resolution</string>
+  <string name="geting_device_name">Getting device name</string>
+  
+  <string name="num_system_app">%d/%d system apps</string>
+  <string name="num_system_app_0">0/%d system apps</string>
+  <string name="num_system_app_0_0">0 system apps</string>
+  <string name="num_app">%d/%d third-party apps</string>
+  <string name="num_app_0">0/%d third-party apps</string>
+  <string name="num_app_0_0">0 third-party apps</string>
+  <string name="num_message">%d messages</string>
+  <string name="num_message_0">0 messages</string>
+  <string name="num_contact">%d contacts</string>
+  <string name="num_contact_0">0 contacts</string>
+  <string name="num_call_record">%d call records</string>
+  <string name="num_call_record_0">0 call records</string>
+  <string name="num_pic">%d pictures</string>
+  <string name="num_pic_0">0 pictures</string>
+  <string name="num_video">%d videos</string>
+  <string name="num_video_0">0 videos</string>
+  <string name="num_music">%d songs</string>
+  <string name="num_music_0">0 songs</string>
+  <string name="num_document">%d documents</string>
+  <string name="num_document_0">0 documents</string>
+  
+  <string name="tool_tip_msg_1">Backup time depends on data size. If there is a lot of data, the backup will take longer. Please wait</string>
+  <string name="tool_tip_msg_2">If there is a lot of phone data, the backup will take longer. Please wait</string>
+  
+  <string name="ready_backup_data">Please back up the current phone data</string>
+  <string name="reading_backup_data">Reading phone data</string>
+  <string name="select_backup_data">Select data to back up</string>
+  
+  <string name="selected_backup_data">Selected data to back up: %.2fGB</string>
+  <string name="had_backup_data">Completed %.2fGB data backup</string>
+  <string name="will_need_backup_time">Estimated time: %d minutes</string>
+  <string name="need_backup_time">Estimated time: %d minutes</string>
+  
+  <string name="usb_page1_1">Open Settings - My Device</string>
+  <string name="usb_page1_2">Tap [All specs]</string>
+  <string name="usb_page1_3">Tap [MIUI version] repeatedly until you see "You are now a developer!"</string>
+  
+  <string name="usb_page2_1">Open Settings - Additional settings</string>
+  <string name="usb_page2_2">Tap [Developer options]</string>
+  <string name="usb_page2_3">Enable [USB debugging]. When prompted, tap [OK] to enable USB debugging</string>
+  
+  <string name="usb_page3_1">Enable [Install via USB]</string>
+  <string name="usb_page3_2">This operation requires signing in to a Xiaomi account</string>
+  <string name="usb_page3_3">[Install via USB] enabled successfully</string>
+  
+  <string name="usb_install_1">Enable Install via USB</string>
+  <string name="usb_install_2">Follow these steps to enable Install via USB</string>
+  
+  <string name="compressed_doc_err">Failed to compress files. Please try again!</string>
+  <string name="select_box_tip_1">Third-party app data settings</string>
+  <string name="select_box_tip_2">Third-party app data name</string>
+  
+  <string name="bl_read_info_err">Failed to read device information</string>
+  <string name="bl_read_lock_statu_err">Error reading unlock status</string>
+  <string name="bl_device_lock">Device is locked</string>
+  <string name="bl_device_unlock">Device is unlocked</string>
+  
+  <string name="bl_flash_select_rom">Select flash package:</string>
+  <string name="bl_flash_file_select_rom">Select ROM</string>
+  <string name="bl_flash_select_rom_err">Invalid flash package. Please select again:</string>
+  
+  <string name="rec_cancell_download">Cancel the download?</string>
+  <string name="rec_clearn_data_err">Failed to erase data</string>
+  <string name="rec_clearn_data_succ">Data erased successfully</string>
+  <string name="rec_removing_data">Erasing data</string>
+  <string name="rec_not_unconnect">Do not disconnect the phone!</string>
+  <string name="rec_swich_mode">Phone connection mode switched successfully</string>
+  <string name="rec_will_flash">Flashing will start soon</string>
+  
+  <string name="rec_will_flash_1">About to flash</string>
+  <string name="rec_checking">Verifying</string>
+  <string name="rec_flashing">Flashing</string>
+  <string name="rec_flash_succ">Flash successful</string>
+  <string name="rec_done">Done</string>
+  <string name="rec_flash_err">Flash failed</string>
+  
+  <string name="rec_err_msg_1">The phone recovery version is too old and is not supported. Try another upgrade method</string>
+  <string name="rec_err_msg_2">Connection error. Re-enter Recovery mode to flash</string>
+  
+  <string name="rec_err_code">Error code [%d]</string>
+  <string name="rec_back">Back</string>
+  
+  <string name="update_lastest_ver">Already up to date</string>
+  <string name="update_check_ver">New version found</string>
+  <string name="update_ver">Version: %s</string>
+  
+  <string name="sigle_warn_box_msg">Failed to start the phone connection service. Reconnect the phone</string>
+  <string name="double_warn_box_title">Tap the confirmation button on the phone to authorize the operation</string>
+  <string name="double_warn_box_msg">If no prompt appears on the phone, unlock it and click Confirm to resend the authorization request</string>
+  <string name="check_delete_msg">Permanently delete the selected %d files?</string>
+  
+  <string name="item_writting">Waiting</string>
+  <string name="item_done">Completed</string>
+  <string name="item_restoring">Restoring data</string>
+  <string name="item_backup_100">Backing up %s (%d/%d)</string>
+  <string name="item_restore_100">Restoring %s (%d/%d)</string>
+  
+  <string name="backup_ing_no">Backup is not finished. Stop backup?</string>
+  <string name="restore_ing_no">Restore is not finished. Stop restore?</string>
+  <string name="connect_deivce">Connect Phone</string>
+  <string name="restore_ing_no_swicht">Restore is not finished. Stop restore and switch pages?</string>
+  <string name="backup_ing_no_siwcht">Backup is not finished. Stop backup and switch pages?</string>
+  <string name="close_and_update">Close the software to complete the update?</string>
+  
+  <string name="user_err_msg_1">Switch to the main space before backup/restore</string>
+  <string name="user_err_msg_2">Second space does not currently support Mi Assistant backup</string>
+  <string name="guidance_err_msg">Complete setup wizard before backup/restore</string>
+  
+  <string name="get_MD5_err">Failed to get flash package MD5</string>
+  <string name="recommend_rom_ver">Recommended flash package version: %s</string>
+  <string name="current_rom_ver">Current flash package: %s</string>
+  <string name="check_ver_err">Failed to check latest version</string>
+  <string name="last_ver">Latest version: %s</string>
+  <string name="current_ver">Current version: %s</string>
+  <string name="is_last_ver">Already on the latest version</string>
+  
+  <string name="backup_select_err">The selected backup file is invalid. Please select again.</string>
+  <string name="had_restore_data_100">Completed %.2fGB data restore</string>
+  <string name="restore_data_err">%.2fGB data restore failed</string>
+  <string name="select_restore_data">Select data to restore</string>
+  <string name="select_restore_date_type">Select the data types to restore</string>
+  <string name="had_select_restore_data">Selected data to restore: %.2fGB</string>
+  <string name="need_time">Estimated time: %d minutes</string>
+  
+  <string name="text_ver">Mi Assistant: %s beta</string>
+  
+  <string name="update_ing_tool">Downloading update...   %d %%</string>
+  <string name="seletc_dir">Select Folder</string>
+</resources>

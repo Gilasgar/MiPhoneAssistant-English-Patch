@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <ListHBoxElement height="68" childalign="left" childvalign="vcenter" padding="2,0,2,0">
+	<VerticalLayout childalign="left" height="60">
+		<Control name="line" bkimage="imgs\home_sp.png" padding="0,0,0,0" height="1" />
+		<HorizontalLayout padding="0,10,0,0" childalign="left" height="19">
+			<Control name="un_select" padding="5,5,0,0" bkimage="file='imgs/sigle_select.png' source='0,0,14,14'" height="14" width="14"/>
+			<Control name="select" padding="5,5,0,0" bkimage="file='imgs/sigle_select.png' source='14,0,28,14'" height="14" width="14"/>
+			<Label name="file_name" textcolor="#8b94a5" height="19" padding="5,0,0,0" align="left" valign="center"/>
+		</HorizontalLayout>
+		<HorizontalLayout childalign="left" height="40">
+			<Control bkimage="imgs/icon_mms_list.png" padding="5,0,0,0" height="18" width="18"/>
+			<Label name="item_mms" text="" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_contacts_list.png" height="18" width="18"/>
+			<Label name="item_contacts" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_call_log_list.png" height="18" width="18"/>
+			<Label name="item_call_log" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_system_list.png" height="18" width="18"/>
+			<Label name="item_system" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_list_app.png" height="18" width="18"/>
+			<Label name="item_app" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>						
+			
+			<Control bkimage="imgs/icon_video_list.png" height="18" width="18"/>
+			<Label name="item_video" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_list_doc.png" height="18" width="18"/>
+			<Label name="item_doc" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_pic_list.png" height="18" width="18"/>
+			<Label name="item_pic" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+			<Control bkimage="imgs/icon_miusic_list.png" height="18" width="18"/>
+			<Label name="item_miusic" textcolor="#8b94a5" padding="5,0,0,0" align="left" valign="center"/>
+		</HorizontalLayout>
+	</VerticalLayout >
+  </ListHBoxElement>
+</Window>

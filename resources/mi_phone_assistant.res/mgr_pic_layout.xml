@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="830,573" >
+  <Include source="style.xml" />
+  <VerticalLayout  >
+	<HorizontalLayout height="14" padding="50,16,0,16">
+		<CheckBox name="select_all" width="14" height="14" padding="0,0,0,0"/>
+		<Label name="pic_num" text="Today (2 photos)" textcolor="#9a9aa7" font="12" height="16" align="left" padding="5,0,0,0"/>
+	</HorizontalLayout >
+	
+    <VerticalLayout name="pic_layout" >
+      
+    </VerticalLayout>
+	
+	<VerticalLayout height="22" />
+
+  </VerticalLayout>
+</Window>

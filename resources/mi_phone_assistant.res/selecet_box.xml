@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" bordercolor="0x000000" bordersize="2" size="660, 425" mininfo="660, 425" maxinfo="660, 425" caption="0,0,0,42" sizebox="4,4,4,4">
+	<Include source="style.xml" />
+	<VerticalLayout bordercolor="0xaaaaaa" bordersize="1" childalign="center" childvalign="vcenter" bkimage="file='imgs/dialog_bg.png' source='50,90,500,350'">
+		<HorizontalLayout height="35" padding="15,0,5,5" childalign="right" >
+			<Label name="tip_1" text="System Data Settings" font="12" textcolor="#9aa7bb" align="left" padding="10,0,5,0"/>
+			<Button name="closebtn" align="right" width="11" height="11" normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+		</HorizontalLayout>
+		<Control bkimage="imgs\home_sp.png" padding="0,0,0,0" height="1" />
+		
+		<VerticalLayout padding="1,0,1,0" bkimage="file='imgs/bg_usb_debug.png' source='100,100,800,500'">
+			<HorizontalLayout height="35" childalign="right" >
+				<Label name="tip_2" text="System Data Name" font="12" textcolor="#b8c1cf" width="100" padding="18,0,0,0" align="left,venter"/>
+				<Label text="File Size" font="12" textcolor="#b8c1cf" width="100" padding="465,0,0,0" align="left,venter"/>
+			</HorizontalLayout>
+			<Control bkimage="imgs\home_sp.png" padding="0,0,0,0" height="1" />
+			<List name="select_list" header="hidden" bordercolor="#000000" itemhlinecolor="#FFFFFF" width="640" visible="true">
+				<ListHeader height="1">
+					<!-- localized -->
+					<Label text="" font="14" textcolor="#000000" padding="15,0,0,0" align="left,venter"/>
+				</ListHeader>
+			</List>
+		</VerticalLayout>
+		
+		<Control bkimage="imgs\home_sp.png" padding="0,0,0,0" height="1" />
+		<HorizontalLayout height="48" childalign="right" >
+			<CheckBox name="all_select" height="14" width="14" padding="26,0,0,0"/>
+			<Label text="Select All" font="12" width="100" textcolor="#8b94a5" padding="5,0,0,0" align="left,venter"/>
+			<Button name="ensure" text="OK" textcolor="#444c58" align="center" width="75" height="30" padding="300,0,0,0" />
+			<Button name="cancel" text="Cancel" textcolor="#444c58" align="center" width="75" height="30" padding="10,0,0,0" />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

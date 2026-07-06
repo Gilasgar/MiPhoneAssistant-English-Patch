@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" mininfo="640,420" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+	<Include source="style.xml" />
+	<VerticalLayout name="bg" bkimage="file='imgs/bg_small.png'" childalign="center" align="center">
+		<HorizontalLayout height="35" padding="5,3,5,5" childalign="right" >
+			<Control height="13" width="20"  padding="10,0,0,0"/>
+			<Label text="Tip" align="left" padding="5,0,5,0"/>
+				
+			<Button name="closebtn" align="right" width="11" height="11" 
+			normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+			<HorizontalLayout width="12" />
+		</HorizontalLayout>
+		
+		<HorizontalLayout height="308" padding="5,3,5,5" childalign="right" >
+			<HorizontalLayout width="48" height="235">
+				<Button name="usb_back" width="48" height="235" padding="0,0,0,0" normalimage="file='imgs/USB_debug_back.png' source='0,0,48,235'" hotimage="file='imgs/USB_debug_back.png' source='48,0,96,235'" pushedimage="file='imgs/USB_debug_back.png' source='96,0,144,235'" />
+			</HorizontalLayout >
+			
+			<TabLayout name="allow_tab" selectedid="1" height="308">
+				<VerticalLayout name="layout_1">
+					<HorizontalLayout height="35"  padding="5,23,5,0" >
+						<Label text="Tap on the device" align="right" font="18" textcolor="#444c58" />
+						<Label text="[Agree and continue]" textcolor="#56a9f9" align="left" padding="0" font="18" />
+					</HorizontalLayout>
+					<Label text="Mi Assistant does not currently support backup/restore for Second Space or dual apps" padding="0,0,0,0" height="16" textcolor="#8b94a5" />
+				
+					<VerticalLayout height="16" />
+					<Control name="back_up_pic" bkimage="file='imgs/back_up_allow.png'" height="137" width="275"/>
+					<Control name="restore_pic" visible="false" bkimage="file='imgs/restore_allow.png'" height="137" width="275"/>
+					<VerticalLayout height="38" />
+				</VerticalLayout>
+				
+				<VerticalLayout name="layout_2">
+					<HorizontalLayout height="35"  padding="5,23,5,0" >
+						<Label text="Tap on the device" align="right" font="18" textcolor="#444c58" />
+						<Label text="[Agree and continue]" textcolor="#56a9f9" align="left" padding="0" font="18" />
+					</HorizontalLayout>
+					<Label text="Reading device data depends on the amount of data" padding="0,0,0,0" height="16" textcolor="#8b94a5" />
+					<Label text="Check data reading progress in the phone notification shade" height="16" textcolor="#8b94a5" />
+					<VerticalLayout height="26" />
+					<Control bkimage="file='imgs/iphone_tip.png'" height="42" width="278"/>
+					<VerticalLayout height="38" />
+				</VerticalLayout>
+			</TabLayout>
+			
+			<HorizontalLayout width="48" height="235" padding="0,0,0,0">
+				<Button name="usb_next" width="48" height="235" normalimage="file='imgs/USB_debug_next.png' source='0,0,48,235'" hotimage="file='imgs/USB_debug_next.png' source='48,0,96,235'" pushedimage="file='imgs/USB_debug_next.png' source='96,0,144,235'" />
+			</HorizontalLayout >
+		</HorizontalLayout>
+		<VerticalLayout height="38" valign="center">
+			<Button name="yes" text="OK" align="center" width="100" height="32"  />
+		</VerticalLayout>
+			
+	</VerticalLayout>
+</Window>

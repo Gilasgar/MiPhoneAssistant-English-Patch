@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="720,500" mininfo="720,500" roundcorner="1,1" caption="0,0,0,35">
+	<Include source="style.xml" />
+	<VerticalLayout bkimage="file='imgs/bg_sec.png'">
+		<HorizontalLayout height="35" padding="5,3,5,5" childalign="right" >
+			<Control height="13" width="20" bkimage="file='imgs/mi_sec.png'" padding="10,0,0,0"/>
+			<Label text="Feedback" align="left" padding="5,0,5,0"/>
+			<Button name="closebtn" align="right" width="11" height="11" 
+				normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+			<HorizontalLayout width="12" />
+		</HorizontalLayout>		
+		
+		<TabLayout name="feed_tab" selectedid="0">
+			<VerticalLayout name="push_log_layout">
+				<HorizontalLayout height="60" padding="120,65,0,0">
+					<Control  width="36" height="36" bkimage="file='imgs/common_heart.png'"/>
+					<Label text="Thank you for your feedback!" textcolor="#484e58" font="20" align="left" padding="10,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,18,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="1. To get phone logs, dial *#*#284#*#* on the phone. The phone will generate a bugreport file," textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="18" padding="200,10,0,0">
+					<Label text="then import the file to the computer." textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,30,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="2. Click" textcolor="#8b94a5" align="left" width="50" padding="0,0,5,0"/>
+					<Button name="zip_log" text="{u}" showhtml="true" textcolor="#5f86e2" align="left" width="90" normalimage="" hotimage="" pushedimage="" />
+					<Label text="The folder contains the " textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="18" padding="200,10,0,0">
+					<Label text="file, and copy the bugreport file to this folder as well." textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,30,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="3. Click" textcolor="#8b94a5" align="left" width="50" padding="0,0,5,0"/>
+					<Button name="push_log" text="{u}" showhtml="true" textcolor="#5f86e2" align="left" width="90" normalimage="" hotimage="" pushedimage="" />
+					<Label text=", then wait for the log upload." textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout name="code_layout" height="24" padding="140,27,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="4. Recent log upload return code:" textcolor="#8b94a5" align="left" width="220" padding="0,0,5,0"/>
+					<Edit name="last_code" text="1231312" textcolor="#8b94a5" align="left" padding="0,0,5,0" bkimage="file='imgs/bg_sec.png' source='10,20,700,300'" />
+				</HorizontalLayout>
+
+				<Control bkimage="file='imgs/bg_sec.png' source='10,20,700,300'" padding="1,0,1,1"/>
+			</VerticalLayout>
+			
+			<VerticalLayout name="push_succ_layout">
+				<HorizontalLayout height="60" padding="120,70,0,0">
+					<Control  width="36" height="36" bkimage="file='imgs/common_heart.png'"/>
+					<Label text="Log uploaded successfully!" textcolor="#00DD00" font="20" align="left" padding="10,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="24" padding="140,18,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="1. Log uploaded successfully. Log return code:" textcolor="#8b94a5" align="left" width="240" padding="0,0,5,0"/>
+					<Edit name="log_code" text="xxxx" textcolor="#8b94a5" align="left" padding="0,0,5,0" bkimage="file='imgs/bg_sec.png' source='10,20,700,300'"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,30,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="2. Click" textcolor="#8b94a5" align="left" width="50" padding="0,0,5,0"/>
+					<Button name="BBS_log" text="{u}" showhtml="true" textcolor="#5f86e2" align="left" width="90" normalimage="" hotimage="" pushedimage="" />
+					<Label text=", create a post describing the issue, attach screenshots, and include the log return code." textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+
+				<Control bkimage="file='imgs/bg_sec.png' source='10,20,700,300'" padding="1,0,1,1"/>
+			</VerticalLayout>
+			
+			<VerticalLayout name="push_err_layout">
+				<HorizontalLayout height="60" padding="120,70,0,0">
+					<Control  width="36" height="36" bkimage="file='imgs/common_heart.png'"/>
+					<Label text="Log upload failed!" textcolor="#DD0000" font="20" align="left" padding="10,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,18,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="Log upload failed. Reason:" textcolor="#8b94a5" align="left" width="140" padding="0,0,5,0"/>
+					<Label name="err_code" text="xxxx" textcolor="#8b94a5" align="left" padding="0,0,5,0"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,30,0,0">
+					<Control  width="18" height="18"/>
+					<Label text="Please try again later!" textcolor="#8b94a5" align="left" width="120" padding="0,0,5,0"/>
+					<Button name="back_log" text="{u}Back{/u}" showhtml="true" textcolor="#5f86e2" align="left" width="50" normalimage="" hotimage="" pushedimage="" />
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="18" padding="140,30,0,0">
+					<Control  width="18" height="18"/>
+					
+				</HorizontalLayout>
+
+				<Control bkimage="file='imgs/bg_sec.png' source='10,20,700,300'" padding="1,0,1,1"/>
+			
+			</VerticalLayout>
+		</TabLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <VerticalLayout name="web_login" float="true" pos="2,38,808,528">
+    <GifAnim name="waiting_anti" visible="false" float="true" bkimage="imgs/loading.gif" pos="338,96,462,210"/>
+    <HorizontalLayout name="net_error_layout" visible="false" padding="10,0,10,0">
+      <VerticalLayout>
+        <Label text="You appear to be offline" textcolor="#505050" font="48" height="60" padding="0,100,0,0"/>
+        <Label text="Connect to the network and refresh" textcolor="#a6a6a6" font="14" height="60"  />
+        <Button name="refresh_web" left="100" top="296" height="42" width="180" text="Refresh" textcolor="#666666" normalimage="file='imgs/common_btn.png' source='0,0,142,42'" hotimage="file='imgs/common_btn.png' source='142,0,284,42'" pushedimage="file='imgs/common_btn.png' source='284,0,426,42'" />
+      </VerticalLayout>
+      <Control width="390" height="410" bkimage="file='imgs/net_err.png' source='110,110,500, 520'" />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

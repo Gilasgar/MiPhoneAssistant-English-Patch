@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" mininfo="640,420" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_small.png'" childalign="center" align="center">
+	<HorizontalLayout height="35" padding="5,3,5,5" childalign="right" >
+		<Control height="13" width="20"  padding="10,0,0,0"/>
+		<Label text="Mi Flash Assistant" align="left" padding="5,0,5,0"/>
+			
+		<Button name="closebtn" align="right" width="11" height="11" 
+		normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+		<HorizontalLayout width="12" />
+	</HorizontalLayout>
+	
+	<VerticalLayout height="86" />
+	<Control bkimage="file='imgs/err.png'" height="74" width="74"/>
+	<VerticalLayout height="18" />
+	<Label name ="tip" text="" font="18" textcolor="#444c58" />
+	
+	<VerticalLayout height="90" />
+	<HorizontalLayout height="38">
+		<Button name="yes" text="OK" textcolor="#444c58" padding="193,0,0,0" font="13" height="38" width="116" align="center" />
+		<Button name="no" text="Cancel" textcolor="#444c58" padding="30,0,0,0" font="13" height="38" width="116" align="center" />
+	</HorizontalLayout>
+	
+  </VerticalLayout>
+</Window>

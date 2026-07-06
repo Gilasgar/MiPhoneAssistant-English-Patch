@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,573" mininfo="990,573"  caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout width="573">
+	  <HorizontalLayout height="20" width="573" childalign="left">
+		<CheckBox name="select_all" align="left" valign="top" width="20" height="20" />
+		<Label name="layout_title" text="Pictures" textcolor="#8b94a5" width="100" height="18" align="left"/>
+	  </HorizontalLayout>
+	  
+	  <VerticalLayout name="item_layout" width="573">
+
+	  </VerticalLayout>
+   </VerticalLayout>
+</Window>

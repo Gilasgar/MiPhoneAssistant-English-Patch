@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Window bktrans="true" size="135,235">  
+ <Font id="0" name="Arial" size="13" bold="false"/>
+ <Font id="1" name="Arial" size="12"/>
+<VerticalLayout bkimage="file='imgs/bg_menu.png' source='2,5,114,157'">  
+    <List bordercolor="#dcdee1" bordersize="9" header="hidden" inset="8,8,8,8" itemhotimage="file='imgs/menu_hot_bk.png' corner='2,2,2,2'" itemdisabledbkcolor="#F2F2F2">  
+        <ListContainerElement name="copy_v" height="35" padding="1,1,1,0" inset="18,0,0,0">  
+			<Label text="Export" align="left" textcolor="#444c58" mouse="false" padding="0,0,0,0"/>  
+        </ListContainerElement>  
+		
+		<Control height="1" padding="9,0,9,0" bkimage="imgs/menu_sp.png"/>
+		
+		<ListContainerElement name="delete_v" height="35" padding="1,0,1,0" inset="18,0,0,0" >  
+            <Label text="Delete"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement>  
+		
+		<Control height="1" padding="9,0,9,0" bkimage="imgs/menu_sp.png"/>
+		
+        <ListContainerElement name="open_v" height="35" padding="1,0,1,0" inset="18,0,0,0">  
+            <Label text="Play" textcolor="#444c58" mouse="false"  padding="11,0,0,0"/>  
+        </ListContainerElement>  
+        
+		<Control height="1" padding="9,0,9,0" bkimage="imgs/menu_sp.png"/>
+		
+		<ListContainerElement name="select_all_v" height="35" padding="1,0,1,1" inset="18,0,0,0" >
+            <Label text="Select All"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement> 
+		
+		<Control height="1" padding="9,0,9,0" bkimage="imgs/menu_sp.png"/>
+		
+		<ListContainerElement name="no_select_v" height="35" padding="1,0,1,1" inset="18,0,0,0" >
+            <Label text="Deselect All"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement> 
+		
+		<Control height="1" padding="9,0,9,0" bkimage="imgs/menu_sp.png"/>
+		
+		<ListContainerElement name="add_v" height="35" padding="1,0,1,1" inset="18,0,0,0" >
+            <Label text="Add Local Videos"  textcolor="#444c58" mouse="false" padding="11,0,0,0"/>  
+        </ListContainerElement> 
+    </List>  
+</VerticalLayout> 
+</Window> 

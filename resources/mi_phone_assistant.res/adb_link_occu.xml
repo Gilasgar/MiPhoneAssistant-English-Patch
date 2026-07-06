@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" mininfo="640,420" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" childalign="center" align="center">
+	<VerticalLayout height="86" />
+	<Control bkimage="file='imgs/waring.png'" height="74" width="74"/>
+	<VerticalLayout height="18" />
+	<Label text="Your USB port is occupied by the following program," font="18" textcolor="#444c58" />
+	<Label text="Close it before connecting the phone normally" font="18" textcolor="#444c58" />
+	<Label name="pro_name" text="360.exe(181818)" height="20" textcolor="#8b94a5" padding="5,0,5,0"/>
+	<VerticalLayout height="60" />
+	<Button name="close_pro" text="OK, close it" textcolor="#444c58" padding="30,0,0,0" font="14" height="38" width="116" align="center" />
+
+  </VerticalLayout>
+</Window>

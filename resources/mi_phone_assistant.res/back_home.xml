@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="993,727" mininfo="993,727" caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/mi_phone_assistant_bg.png' source='79,68,1071,796' corner='0,80,0,36'" childalign="center" align="center">
+	<Control width="60" height="60" bkimage="file='imgs/update_version.png'"/>
+	<Button name="create_new_back" text="New Backup" textcolor="#444c58" font="14" height="30" width="130" />
+	<HorizontalLayout childalign="center" childvalign="enter">
+		<HorizontalLayout childalign="center" childvalign="enter" height="60" >
+			<Control width="60" height="60" bkimage="file='imgs/update_version.png'"/>
+			<VerticalLayout childalign="center" childvalign="enter">
+				<Label text="Backup History:" font="16" textcolor="#888888" />
+				<Label name="back_up_time" text="Sep 5, 2017 14:30" font="16" textcolor="#888888" />
+			</VerticalLayout>
+		</HorizontalLayout>
+		
+		<HorizontalLayout childalign="center" childvalign="enter" height="60">
+			<Control width="60" height="60" bkimage="file='imgs/update_version.png'"/>
+			<VerticalLayout childalign="center" childvalign="enter">
+				<Label text="Auto backup after device connects" font="16" textcolor="#888888" />
+				<Label text="{u}Enabled{/u}" showhtml="true" font="16" textcolor="#888888" />
+			</VerticalLayout>
+		</HorizontalLayout>
+	</HorizontalLayout>
+  </VerticalLayout>
+</Window>

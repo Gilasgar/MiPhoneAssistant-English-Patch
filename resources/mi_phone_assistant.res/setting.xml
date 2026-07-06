@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="862, 582" roundcorner="2,1" mininfo="862, 582" maxinfo="862, 582"  caption="0,0,0,42" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout childalign="center" childvalign="vcenter" bkimage="file='imgs/bg_set.png'">
+    <HorizontalLayout height="42" inset="10,0,10,0">
+      <Label text="Settings" font="13" textcolor="#9a9aa7" align="left,venter" padding="10, 0, 0, 0" />
+
+        <Button name="window_close_btn" width="11" height="11" 
+      normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'"/>
+	  <HorizontalLayout width="6" />
+    </HorizontalLayout>
+    <HorizontalLayout>
+      <!--content-->
+      <VerticalLayout width="158" childpadding="4" inset="2,2,2,2" childalign="center">
+		<VerticalLayout height="10" />
+        <Option name="general_setting_opt" height="30" selected="true" group="setting_options" text="General Settings" textcolor="#9a9aa7" padding="30,0,0,0" font="15" bordersize="0" align="left,venter" selectedtextcolor="#ff7e41"/>
+        <Option name="download_seting_opt" height="30" group="setting_options"  text="Storage Settings" font="15" textcolor="#9a9aa7" padding="30,0,0,0" bordersize="0" align="left,venter" selectedtextcolor="#ff7e41"/>
+		<Option name="back_up_seting_opt" height="30" group="setting_options"  text="Backup Settings" font="15" textcolor="#9a9aa7" padding="30,0,0,0" bordersize="0" align="left,venter" selectedtextcolor="#ff7e41"/>
+      </VerticalLayout>
+      <TabLayout selectedid="0" name="setting_tabs">
+        <VerticalLayout name="general_setting_layout" padding="15,15,15,15" childalign="left" >
+          <Label textcolor="#848484" height="30" font="17" text="General Settings"  textcolor="#809aa7" align="left" padding="18,20,0,0"/>
+
+		  <HorizontalLayout height="30" padding="8,20,0,0">
+            <Label text="Close" width="80" height="18" textcolor="#000000"/>
+            <Option name="to_tray" group="exit_set" width="15" height="15" padding="10,0,5,0" normalimage="file='imgs/sigle_select.png' source='0,0,14,14'" selectedimage="file='imgs/sigle_select.png' source='14,0,28,14'"/>
+			<Label text="Minimize to tray" textcolor="#8b94a5" width="100" height="18" padding="10,0,5,0" align="left"/>
+          </HorizontalLayout>
+		  
+		  <HorizontalLayout height="30" padding="8,5,0,0">
+            <Label text="" width="80" height="18"/>
+            <Option name="to_exit" group="exit_set" width="15" height="15" padding="10,0,5,0" normalimage="file='imgs/sigle_select.png' source='0,0,14,14'" selectedimage="file='imgs/sigle_select.png' source='14,0,28,14'"/>
+			<Label text="Exit application" textcolor="#8b94a5" width="100" height="18" padding="10,0,5,0" align="left"/>
+          </HorizontalLayout>
+		  
+          <HorizontalLayout height="30" padding="8,20,0,0">
+            <Label text="Proxy" width="80" height="18" textcolor="#000000"/>
+            <Button name="netproxy_btn" text="Change Proxy" textcolor="#111111" font="13" width="140" height="30" padding="10,0,10,0"
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+			<Label text="Use system proxy settings" textcolor="#8b94a5" font="13" height="18" align="left"/>
+          </HorizontalLayout>
+		  
+        </VerticalLayout>
+
+        <VerticalLayout name="download_setting_layout" padding="15,15,15,15" childalign="left" >
+          <Label textcolor="#848484" height="30" font="17" text="Storage Settings" textcolor="#809aa7" align="left" padding="18,20,0,0"/>
+          <HorizontalLayout height="30" padding="8,30,0,0">
+            <Label text="Download" width="80" textcolor="#000000"/>
+			<VerticalLayout width="417" height="30" bkimage="file='imgs/set_input.png'">
+				<Label name="download_path" text="" textcolor="#8b94a5" padding="12,0,12,0" align="left"/>
+			</VerticalLayout >
+            <Button name="open_download_path" text="Open" width="72" height="30" padding="10,0,5,0" 
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+			
+			<Button name="select_download_path" text="Change" width="72" height="30" padding="3,0,5,0" 
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+          </HorizontalLayout>
+		  
+		  <HorizontalLayout height="30" padding="8,20,0,0">
+            <Label text="Screenshots" width="80" textcolor="#000000"/>
+			<VerticalLayout width="417" height="30" bkimage="file='imgs/set_input.png'">
+				<Label name="shot_path" text="" textcolor="#8b94a5" padding="12,0,12,0" align="left"/>
+			</VerticalLayout >
+            <Button name="open_shot_path" text="Open" width="72" height="30" padding="10,0,5,0" 
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+			
+			<Button name="select_shot_path" text="Change" width="72" height="30" padding="3,0,5,0" 
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+          </HorizontalLayout>
+		  
+        </VerticalLayout>
+		
+		<VerticalLayout name="back_up_setting_layout" padding="15,15,15,15" childalign="left">
+          <Label textcolor="#848484" height="30" font="17" text="Backup Settings" textcolor="#809aa7" align="left" padding="18,20,0,0"/>
+		  <HorizontalLayout height="30" padding="8,30,0,0">
+            <Label text="Backup" width="80" textcolor="#000000"/>
+			<VerticalLayout width="417" height="30" bkimage="file='imgs/set_input.png'">
+				<Label name="back_up_path" text="" textcolor="#8b94a5" padding="12,0,12,0" align="left"/>
+            </VerticalLayout >
+			<Button name="open_back_up_path" text="Open" width="72" height="30" padding="10,0,5,0" 
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+			
+			<Button name="select_back_up_path" text="Change" width="72" height="30" padding="3,0,5,0" 
+			normalimage="file='imgs/btn_gray_set_n_click_p.png' source='0,0,116,30'" hotimage="file='imgs/btn_gray_set_n_click_p.png' source='116,0,232,30'" pushedimage="file='imgs/btn_gray_set_n_click_p.png' source='232,0,348,30'"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+      </TabLayout>
+    </HorizontalLayout>
+	
+	<HorizontalLayout height="32" padding="0,0,0,10" childalign="right">
+		<Button name="set_def" text="Restore Defaults" textcolor="#444c58" height="32" width="100" padding="10,0,0,0"/>
+		<Button name="sure" text="OK" textcolor="#ff7e41" height="32" width="80" padding="577,0,3,0"/>
+        <Button name="cancel" text="Cancel" textcolor="#444c58" height="32" width="80" />
+    </HorizontalLayout>
+		  
+    
+  </VerticalLayout>
+</Window>

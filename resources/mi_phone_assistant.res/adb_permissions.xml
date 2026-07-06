@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="806,504" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_usb_debug.png' source='54,100,853,500'" childalign="center" align="center">
+	  <HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+			<Control bkimage="file='imgs/mi_sec.png'" height="13" width="20"  padding="10,0,0,0"/>
+			<Label text="Mi Assistant" align="left" padding="5,0,5,0"/>
+				
+			<Button name="closebtn" align="right" width="11" height="11" 
+			normalimage="file='imgs/close_xiao_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_xiao_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_xiao_n_click_p.png' source='22,0,33,11'" />
+			<HorizontalLayout width="11" />
+		</HorizontalLayout>
+		<VerticalLayout height="27"/>
+		<Label name="title_1" text="Enable USB Debugging" textcolor="#444c58" font="19" height="32"/>
+		<Label name="title_2" text="Follow these steps to enable USB debugging" textcolor="#444c58" font="15" height="20"/>
+		<VerticalLayout height="28"/>
+		<HorizontalLayout height="400" childvalign="top">
+			<HorizontalLayout width="48" height="235">
+				<Button name="usb_back" visible="false" width="48" height="235" padding="0,0,0,0" normalimage="file='imgs/USB_debug_back.png' source='0,0,48,235'" hotimage="file='imgs/USB_debug_back.png' source='48,0,96,235'" pushedimage="file='imgs/USB_debug_back.png' source='96,0,144,235'" />
+			</HorizontalLayout >
+			<VerticalLayout width="714" height="400">
+				<Control name="usb_pic" bkimage="imgs/USB_debug_1.png" height="235" width="714" padding="0,0,0,0"/>
+				<HorizontalLayout width="714" height="76" padding="0,10,0,0">
+					<RichEdit name="tip_1" text="Open Settings - My Device" textcolor="#444c58" align="left" width="238" backgroundtransparent="true" readonly="true" font="15" padding="0,0,0,0" />
+					<RichEdit name="tip_2" text="Tap [All specs]" textcolor="#444c58" align="left" width="238" backgroundtransparent="true" readonly="true" font="15" padding="5,0,0,0" />
+					<RichEdit name="tip_3" text="Tap [MIUI version] repeatedly until you see " textcolor="#444c58" align="left" width="238" backgroundtransparent="true" readonly="true" font="15" padding="5,0,0,0"/>
+				</HorizontalLayout >
+			</VerticalLayout>
+			
+			<HorizontalLayout width="48" height="235" padding="0,0,0,0">
+				<Button name="usb_next" width="48" height="235" normalimage="file='imgs/USB_debug_next.png' source='0,0,48,235'" hotimage="file='imgs/USB_debug_next.png' source='48,0,96,235'" pushedimage="file='imgs/USB_debug_next.png' source='96,0,144,235'" />
+			</HorizontalLayout >		
+		</HorizontalLayout>
+  </VerticalLayout>
+</Window>

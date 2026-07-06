@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="513, 175" mininfo="513, 275" maxinfo="513, 275" caption="0,0,0,42" sizebox="4,4,4,4">
+	<Include source="style.xml" />
+	<VerticalLayout childalign="center" childvalign="vcenter" bkimage="file='imgs/dialog_bg.png' corner='3,35,3,3'">
+		<HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+			<Label text="Tip" font="16" align="left" padding="10,0,5,0"/>
+			
+			<Button name="closebtn" align="right" width="31" height="29" maxheight="29" maxwidth="31" normalimage="file='btns/light_close.png' source='0,0,31,29'" hotimage="file='btns/light_close.png' source='31,0,62,29'" pushedimage="file='btns/light_close.png' source='62,0,93,29'" />
+		</HorizontalLayout>
+		
+		<VerticalLayout childalign="center" padding="0,20,0,0"height="50" valign="center" >
+			<RichEdit name="text_msg" align="center" backgroundtransparent="true" readonly="true" font="18" padding="0,0,0,0" textcolor="#FF0000" width="350" text="" vscrollbar="true" enabled="false"/>
+		</VerticalLayout >
+		
+		<HorizontalLayout name="double_layout" height="32" padding="0,40,0,0" align="center">
+			<Button name="select_yes" text="OK" align="center" width="100" height="32" />
+			<Button name="select_no" text="Cancel" align="center" width="100" height="32"  />
+		</HorizontalLayout>
+		
+		<Button name="know" text="OK" align="center" width="100" height="32" padding="0,10,0,0" />
+	</VerticalLayout>
+</Window>

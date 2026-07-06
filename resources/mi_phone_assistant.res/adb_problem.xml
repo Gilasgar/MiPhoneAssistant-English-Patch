@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,580" mininfo="990,580" caption="0,0,0,80" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_big.png' source='30,140,900,600'" >
+	<VerticalLayout height="90"/>
+	<Label text="Connect your device with a USB cable" textcolor="#444c58" font="28" height="32"/>
+	<VerticalLayout height="15"/>
+	<Label text="After connecting, flash quickly, back up and restore data, manage files, and control device content easily" textcolor="#8b94a5" height="18"/>
+	<VerticalLayout height="30"/>
+	<Control bkimage="imgs/home_link.png" width="393" height="194" padding="0,9,10,0"/>
+	<VerticalLayout height="50"/>
+	<VerticalLayout childalign="left" height="54" width="200" childalign="center" childvalign="center" bkimage="imgs/btn_blue_shadw.png" >
+		<Button name="refurbish" text="Connect Device" font="17" height="38" width="156" textcolor="#ffffff" disabledtextcolor="#ffffff" normalimage="file='imgs/btn_blue_n_click_p.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_blue_n_click_p.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_blue_n_click_p.png' source='312,0,468,38' corner='5,5,5,5'" disabledimage="file='imgs/btn_blue_n_click_p.png' source='468,0,624,38' corner='5,5,5,5'"/>
+	</VerticalLayout>
+	<VerticalLayout height="10"/>
+	<Button name="adb_help" align="left" text="{u}Can't recognize the connected phone?{/u}" showhtml="true" textcolor="#5f86e2" padding="0,0,0,0" font="14" height="30" width="150" normalimage="" hotimage="" pushedimage=""/>
+  </VerticalLayout>
+</Window>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,420" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_sec.png'" childalign="center" align="center">
+	  <HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+			<Control bkimage="file='imgs/mi_sec.png'" height="13" width="20"  padding="10,0,0,0"/>
+			<Label text="Mi Assistant" align="left" padding="5,0,5,0"/>
+				
+			<Button name="closebtn" align="right" width="11" height="11" 
+			normalimage="file='imgs/close_xiao_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_xiao_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_xiao_n_click_p.png' source='22,0,33,11'" />
+			<HorizontalLayout width="11" />
+	  </HorizontalLayout>
+	  
+	  <VerticalLayout name="intstall_ing_layout" visible="false">
+		<VerticalLayout height="85" />
+		<Control bkimage="imgs/icon_intall_apk.png" width="74" height="74"/>
+		<Label text="Tap [Continue installation] on the phone to update the phone backup app" padding="0,25,0,0" font="18" textcolor="#444c58"/>
+		<!-- localized -->
+		<Control  bkimage="file='imgs/bg_sec.png' source='10,40,630,300'" padding="2,2,2,2"/>
+	  </VerticalLayout>
+	  
+	  <VerticalLayout name="intstall_err_layout" visible="true">
+		<VerticalLayout height="85" />
+		<Control bkimage="file='imgs/waring.png'" height="74" width="74"/>
+		<Label text="Installation failed. Make sure USB install is enabled" padding="0,25,0,0" font="18" textcolor="#444c58" />
+		<VerticalLayout height="30" />
+		<Button name="unauthorized_help_btn" align="left" text="{u}How to enable USB install?{/u}" showhtml="true" textcolor="#5f86e2" padding="0,0,0,0" font="15" height="30" width="135" normalimage="" hotimage="" pushedimage=""/>
+		<!-- localized -->
+		<VerticalLayout height="20" bkimage="file='imgs/bg_sec.png' source='10,40,630,300'" padding="3,0,0,3"/>
+		<Button name="manual_installation_btn" align="left" text="{u}Open APK folder and install manually{/u}" bkimage="file='imgs/bg_sec.png' source='10,40,630,300'" showhtml="true" textcolor="#5f86e2" textpadding="220" padding="3,0,0,3" font="15" height="30"  normalimage="" hotimage="" pushedimage=""/>
+	  </VerticalLayout>
+	  
+	  <VerticalLayout name="intstall_succ_layout" visible="false">
+		<VerticalLayout height="85" />
+		<Control  bkimage="file='imgs/icon_succ_74.png'" height="74" width="74"/>
+		<Label text="Update Complete" padding="0,25,0,0" font="18" textcolor="#444c58" />
+		<!-- localized -->
+		<Control  bkimage="file='imgs/bg_sec.png' source='10,40,630,300'" padding="2,2,2,2"/>
+	  </VerticalLayout>
+  </VerticalLayout>
+</Window>

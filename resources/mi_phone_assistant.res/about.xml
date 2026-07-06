@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="600,420" mininfo="600,420" roundcorner="1,1" caption="0,0,0,35" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/bg_update.png'" childalign="center" align="center">
+	<HorizontalLayout height="35" padding="5,0,5,5" childalign="right" >
+		<Control bkimage="" height="13" width="20"  padding="10,0,0,0"/>
+		<Label text="" align="left" padding="5,0,5,0"/>
+			
+		<Button name="closebtn" align="right" width="11" height="11" maxheight="29" maxwidth="31" normalimage="file='imgs/close_n_click_p.png' source='0,0,11,11'" hotimage="file='imgs/close_n_click_p.png' source='11,0,22,11'" pushedimage="file='imgs/close_n_click_p.png' source='22,0,33,11'" />
+		<HorizontalLayout width="11" />
+	</HorizontalLayout>
+	<HorizontalLayout height="112" />
+	<Control bkimage="file='imgs/mi_assistan.png'" height="53" width="56"/>
+	<Label name="client_ver" text="Version: 3.0.0.1001" font="14" height="20" textcolor="#535150" />	
+	
+	<HorizontalLayout height="18" padding="0,130,0,0" childalign="center">
+		<Button name="web" padding="90,0,35,0" text="Official Website" align="right" valign="bottom" font="15" width="90" textcolor="#535150" hottextcolor="#ff702c" pushedtextcolor="#ff702c"
+		normalimage="file='imgs/mi_web.png' source='0,0,28,18' dest='0,0,28,18'" hotimage="file='imgs/mi_web.png' source='28,0,56,18' dest='0,0,28,18'" pushedimage="file='imgs/mi_web.png' source='56,0,84,18' dest='0,0,28,18'"/>
+		
+		<Control bkimage="imgs/about_sp.png" width="1" height="13"/>
+			
+		<Button name="forum" padding="35,0,35,0" text="Official Forum" align="right" valign="bottom" font="15" width="95" textcolor="#535150" hottextcolor="#ff702c" pushedtextcolor="#ff702c"
+		normalimage="file='imgs/miui_forum.png' source='0,0,28,18' dest='0,0,28,18'" hotimage="file='imgs/miui_forum.png' source='28,0,56,18' dest='0,0,28,18'" pushedimage="file='imgs/miui_forum.png' source='56,0,84,18' dest='0,0,28,18'"/>
+		
+		<Control bkimage="imgs/about_sp.png" width="1" height="13"/>
+		
+		<Button name="weibo" padding="35,0,0,0" text="Official Weibo" align="right" valign="bottom" font="15" width="90" textcolor="#535150" hottextcolor="#ff702c" pushedtextcolor="#ff702c"
+		normalimage="file='imgs/weibo.png' source='0,0,28,18' dest='0,0,28,18'" hotimage="file='imgs/weibo.png' source='28,0,56,18' dest='0,0,28,18'" pushedimage="file='imgs/weibo.png' source='56,0,84,18' dest='0,0,28,18'"/>
+	</HorizontalLayout>
+	<Label text="Copyright@mi.com All Rights Reserved" padding="0,15,0,0" font="12" height="20" textcolor="#8b94a5" />	
+  </VerticalLayout>
+</Window>

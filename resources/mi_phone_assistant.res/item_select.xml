@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Include source="style.xml" />
+  <ListHBoxElement height="50" childalign="left" childvalign="vcenter" padding="2,0,2,0">
+	  <VerticalLayout childalign="left" height="50">
+		<Control name="line" bkimage="imgs\home_sp.png" padding="0,0,0,0" height="1" />
+		<HorizontalLayout childalign="left" height="49">
+			<VerticalLayout width="14" childalign="left" childvalign="center">
+				<VerticalLayout />
+				<CheckBox name="check_se" height="14" width="14" />
+				<VerticalLayout />
+			</VerticalLayout >
+			<VerticalLayout width="40" width="35" childalign="left" childvalign="center">
+				<VerticalLayout />
+				<Control name="pic" bkimage="file='imgs/default_ico.png'" padding="3,0,0,0" height="26" width="26"/>
+				<VerticalLayout />
+			</VerticalLayout >
+				
+			<Label name="item_name" textcolor="#666666" padding="5,0,0,0" align="left" valign="center"/>
+			<Label name="size" textcolor="#666666" align="right" valign="center"/>
+		</HorizontalLayout >
+	   </VerticalLayout >
+  </ListHBoxElement>
+</Window>

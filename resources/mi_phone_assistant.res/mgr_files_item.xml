@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="">
+  <Include source="style.xml" />
+  <ListHBoxElement height="34" childalign="center" childvalign="vcenter" bkimage="file='imgs/sp_3.png' dest='22,0,640,1'">
+	<HorizontalLayout width="280" chialign="left">
+		<CheckBox name="select" width="14" height="14" padding="25,8,12,8"/>
+		<TabLayout name="flash_tab" width="17" height="16" selectedid="0">
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/ic_file_n_p.png' source='0,0,16,16'"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/ic_pic_n_p.png' source='0,0,17,16'"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/ic_music_n_p.png' source='0,0,17,16'"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/icon_vido_n_click_p.png' source='0,0,16,15'"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/ic_doc_n_p.png' source='0,0,17,16'"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/ic_zip_n_p.png' source='0,0,17,16'"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout >
+				<Control bkimage="file='imgs/ic_apk_n_p.png' source='0,0,17,16'"/>
+			</HorizontalLayout>	
+		</TabLayout>
+		
+		<Label name="name" font="12" textcolor="#99000000" align="left" text="theme" padding="5,0,0,0"/>
+	</HorizontalLayout >
+	<Label name="size" font="12" align="left" textcolor="#99000000" width="130" text="43.34kb" width="18"/>
+	<Label name="type" font="12" align="left" textcolor="#99000000" width="130" text="Folder" width="18"/>
+	<Label name="time" font="12" align="left" textcolor="#99000000" width="50" text="1978-12-12 12:12" width="18"/>
+
+  </ListHBoxElement>
+</Window>

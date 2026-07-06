@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,573" mininfo="990,573" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout >
+	  <VerticalLayout height="32" bkimage="imgs/bg_tip.png" padding="0,0,0,0">
+			<Label text="Tip: During flashing, temporarily close QQ and other phone assistant tools" height="32" textcolor="#ffb040" bkcolor="#fef0db" bordercolor="#fef0db"/>
+	  </VerticalLayout>
+	  <HorizontalLayout name="bg" bkimage="file='imgs/bg_big.png' source='2,140,900,600'" height="541">
+		<VerticalLayout  width="105"/>
+		<VerticalLayout  width="215">
+			<VerticalLayout  height="60" />
+			<Control bkimage="imgs\recovery_unlink.png" height="431" width="215"/>
+		</VerticalLayout>
+		<VerticalLayout  width="121"/>
+		<VerticalLayout  childalign="left" width="592">
+			<VerticalLayout  height="100" />
+			<Label padding="22,0,0,0" text="Connect a device in Recovery mode" font="18" textcolor="#444c58" align="left"/>
+			<Label padding="22,5,0,0" text="How to connect a phone in Recovery mode:" textcolor="#8b94a5"  height="23" align="left"/>
+			<Label padding="22,0,0,0" text="With the phone powered off, hold [Volume Up] and [Power] for 3 seconds" textcolor="#8b94a5"  height="23" align="left"/>
+			<Label padding="22,0,0,0" text="After entering Recovery, choose [Connect to Mi Assistant]" textcolor="#8b94a5"  height="23" align="left"/>
+			<VerticalLayout  height="40" />
+			<Label padding="22,0,0,0" text="Connect a device in Fastboot mode" font="18" textcolor="#444c58" align="left"/>
+			<Label padding="22,5,0,0" text="How to connect a phone in Fastboot mode:" textcolor="#8b94a5"  height="23" align="left"/>
+			<Label padding="22,0,0,0" text="With the phone powered off, hold [Volume Down] and [Power] for 3 seconds" textcolor="#8b94a5"  height="23" align="left"/>
+			<VerticalLayout  height="40" />
+			<VerticalLayout childalign="left" height="54" width="170" childalign="center" childvalign="center" bkimage="imgs/btn_gray_shadow.png" >
+				<Button name="unconnect_refurbish" text="Refresh" font="14" height="38" width="126" textcolor="#444c58" 
+				normalimage="file='imgs/btn_gray_n_click_p_d.png' source='0,0,156,38' corner='5,5,5,5'" hotimage="file='imgs/btn_gray_n_click_p_d.png' source='156,0,312,38' corner='5,5,5,5'" pushedimage="file='imgs/btn_gray_n_click_p_d.png' source='312,0,468,38' corner='5,5,5,5'"/>
+			</VerticalLayout>
+			<VerticalLayout  height="3" />
+			<Button padding="22,0,0,0" name="unconnect_explain_help" text="{u}Can't connect?{/u}" showhtml="true" textcolor="#5f86e2" width="90" align="left" normalimage="" hotimage="" pushedimage=""/>
+		</VerticalLayout>
+  </HorizontalLayout>
+  </VerticalLayout>
+</Window>

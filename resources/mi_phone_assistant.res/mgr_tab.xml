@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="990,573" mininfo="990,573" caption="0,0,0,80" >
+  <Include source="style.xml" />
+  <HorizontalLayout name="bg" height="540">
+    <VerticalLayout width="155" bkimage="file='imgs/bg_paishelan.png'">
+        <Option name="pic_op" font="14" textcolor="#9a9aa7" hottextcolor="#ff7e41" selectedtextcolor="#ff7e41" height="15" selected="true" align="left" group="mgr_options" text="      Pictures" padding="52,14,0,0"
+		normalimage="file='imgs/icon_pic_n_click_p.png' source='0,0,15,15' dest='0,0,15,15'" 
+		hotimage="file='imgs/icon_pic_n_click_p.png' source='15,0,30,15' dest='0,0,15,15'" 
+		selectedimage="file='imgs/icon_pic_n_click_p.png' source='30,0,45,15' dest='0,0,15,15'"/>
+		
+        <Option name="video_op" font="14" textcolor="#9a9aa7" hottextcolor="#ff7e41" selectedtextcolor="#ff7e41" height="15" align="left" group="mgr_options" text="      Videos" padding="52,22,0,0"
+		normalimage="file='imgs/icon_vido_n_click_p.png' source='0,0,16,15' dest='0,0,16,15'" 
+		hotimage="file='imgs/icon_vido_n_click_p.png' source='16,0,32,15' dest='0,0,16,15'" 
+		selectedimage="file='imgs/icon_vido_n_click_p.png' source='32,0,48,15' dest='0,0,16,15'"/>
+		
+        <Option name="files_op" font="14" textcolor="#9a9aa7" hottextcolor="#ff7e41" selectedtextcolor="#ff7e41" height="16" align="left" group="mgr_options" text="      File Manager" padding="52,22,0,0"
+		normalimage="file='imgs/icon_files_n_click_p.png' source='0,0,14,15' dest='0,0,14,15'" 
+		hotimage="file='imgs/icon_files_n_click_p.png' source='14,0,28,15' dest='0,0,14,15'" 
+		selectedimage="file='imgs/icon_files_n_click_p.png' source='28,0,42,15' dest='0,0,14,15'"/>
+    </VerticalLayout>
+
+	<Control height="573" width="1" bkimage="imgs\sp_1.png"/>
+	<TabLayout name="tab_layout" selectedid="0" height="573" padding="0,0,1,0">
+        <HorizontalLayout>
+            <MgrPicPageFrame />
+        </HorizontalLayout>
+		
+        <HorizontalLayout>
+            <MgrVideoPageFrame />
+        </HorizontalLayout>
+		
+		<HorizontalLayout>
+            <MgrFilesPageFrame />
+        </HorizontalLayout>
+    </TabLayout>
+
+  </HorizontalLayout>
+</Window>
