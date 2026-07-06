@@ -2,6 +2,8 @@
 
 English translation patch for **Xiaomi Mi Phone Assistant 4.2.1028.10** (小米手机助手) — turns the Chinese-only UI into English.
 
+If you were searching for *"how to change Mi Phone Assistant language to English"* or *"Mi Phone Assistant English version"* — this is it: the app has no built-in language setting, and this patch translates the UI by replacing its XML resource files.
+
 This project replaces user-visible Chinese text in the extracted DuiLib XML resource files under `mi_phone_assistant.res`. It does not patch binaries, APKs, DLLs, or image assets.
 
 ## ⚠️ Disclaimer
@@ -49,7 +51,9 @@ The patched UI in English:
 
 ## Usage
 
-Open PowerShell **as Administrator** and run:
+**Easiest way:** download the latest release zip, extract it anywhere, and double-click `Run-English-Patch.bat` — it asks for Administrator rights and starts the patcher.
+
+Or open PowerShell **as Administrator** and run:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
@@ -99,6 +103,7 @@ You can also restore manually by copying the backed-up `mi_phone_assistant.res` 
 
 ```text
 MiPhoneAssistant-English-Patch.ps1
+Run-English-Patch.bat
 ScreenShots/
   *.png
 resources/
