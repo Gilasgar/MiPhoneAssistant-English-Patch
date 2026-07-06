@@ -1,6 +1,6 @@
 # Mi Phone Assistant English Patch
 
-English XML resource patch for **Mi Phone Assistant 4.2.1028.10**.
+English translation patch for **Xiaomi Mi Phone Assistant 4.2.1028.10** (小米手机助手) — turns the Chinese-only UI into English.
 
 This project replaces user-visible Chinese text in the extracted DuiLib XML resource files under `mi_phone_assistant.res`. It does not patch binaries, APKs, DLLs, or image assets.
 
