@@ -31,6 +31,22 @@ The patcher refuses to run if `MiPhoneAssistant.exe` does not report `FileVersio
 - Settings, menus, warning dialogs, update dialogs, and file manager labels
 - XML string table values in `values/strings.xml`
 
+## Screenshots
+
+The patched UI in English:
+
+| Connect screen | Backup |
+| --- | --- |
+| ![Connect phone screen](ScreenShots/01-connect-phone.png) | ![Backup tab with connected device](ScreenShots/02-backup.png) |
+
+| Restore | Flash (Recovery / Fastboot) |
+| --- | --- |
+| ![Restore tab](ScreenShots/03-restore.png) | ![Flash tab with Recovery and Fastboot instructions](ScreenShots/04-flash-recovery-fastboot.png) |
+
+| Menu | Settings |
+| --- | --- |
+| ![Tray menu](ScreenShots/05-menu.png) | ![General settings dialog](ScreenShots/06-settings.png) |
+
 ## Usage
 
 Open PowerShell **as Administrator** and run:
@@ -83,6 +99,8 @@ You can also restore manually by copying the backed-up `mi_phone_assistant.res` 
 
 ```text
 MiPhoneAssistant-English-Patch.ps1
+ScreenShots/
+  *.png
 resources/
   mi_phone_assistant.res/
     *.xml
